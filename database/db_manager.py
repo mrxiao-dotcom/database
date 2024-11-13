@@ -7,6 +7,40 @@ import time
 import traceback
 import sys
 import os
+from utils.decorators import error_handler
+from utils.exceptions import DatabaseError
+import contextlib
+
+class QueryBuilder:
+    """SQL查询构建器"""
+    @staticmethod
+    def build_select(table, fields='*', where=None):
+        query = f"SELECT {fields} FROM {table}"
+        if where:
+            query += f" WHERE {where}"
+        return query
+    
+    @staticmethod
+    def build_insert(table, fields):
+        placeholders = ', '.join(['%s'] * len(fields))
+        return f"INSERT INTO {table} ({', '.join(fields)}) VALUES ({placeholders})"
+    
+    @staticmethod
+    def build_update(table, fields, where):
+        set_clause = ', '.join([f"{field} = %s" for field in fields])
+        return f"UPDATE {table} SET {set_clause} WHERE {where}"
+
+class ConnectionManager:
+    """数据库连接管理器"""
+    def __enter__(self):
+        self.ensure_connected()
+        return self.connection.cursor()
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if exc_type:
+            self.connection.rollback()
+        else:
+            self.connection.commit()
 
 class DatabaseManager:
     def __init__(self):
@@ -103,7 +137,7 @@ class DatabaseManager:
             try:
                 port = int(self.config['port'])
                 if port <= 0 or port > 65535:
-                    logging.error(f"无效的端口号: {port}")
+                    logging.error(f"无的端口号: {port}")
                     return False
             except:
                 logging.error("端口号必须是有效的整数")
@@ -129,28 +163,30 @@ class DatabaseManager:
             logging.error(f"检查数据库连接失败: {str(e)}")
             return False
     
+    @contextlib.contextmanager
+    def transaction(self):
+        """事务管理器"""
+        cursor = None
+        try:
+            if not self.ensure_connected():
+                raise DatabaseError("无法建立数据库连接")
+            cursor = self.connection.cursor()
+            yield cursor
+            self.connection.commit()
+        except Exception as e:
+            if self.connection:
+                self.connection.rollback()
+            raise DatabaseError(f"事务执行失败: {str(e)}")
+        finally:
+            if cursor:
+                cursor.close()
+
+    @error_handler(logger=logging)
     def execute_query(self, query, params=None):
-        """执行查询，带重试机制"""
-        if not self.ensure_connected():
-            return None
-            
-        retries = 0
-        while retries < self.max_retries:
-            try:
-                cursor = self.connection.cursor()
-                if params:
-                    cursor.execute(query, params)
-                else:
-                    cursor.execute(query)
-                return cursor
-            except mysql.connector.Error as e:
-                logging.error(f"查询执行错误 (尝试 {retries + 1}): {str(e)}")
-                retries += 1
-                if retries < self.max_retries:
-                    self.connect()  # 重新连接
-                    time.sleep(self.retry_delay)
-                    
-        return None
+        """执行查询"""
+        with self.transaction() as cursor:
+            cursor.execute(query, params or ())
+            return cursor
     
     def get_contracts(self, exchange=None):
         """获取合约信息"""
@@ -256,7 +292,7 @@ class DatabaseManager:
                 # 获取表结构信息
                 cursor.execute("DESCRIBE futures_basic")
                 field_info = {row[0]: row[1] for row in cursor.fetchall()}
-                print("\n表结构信息:")
+                print("\n结构信息:")
                 for field, type_info in field_info.items():
                     print(f"字段: {field}, 类型: {type_info}")
                 
@@ -310,7 +346,7 @@ class DatabaseManager:
                             elif 'DECIMAL' in field_type or 'INT' in field_type:
                                 data[field] = float(value) if pd.notna(value) else None
                                 
-                            # 处理日期类型字段
+                            # 处理期类型字段
                             elif 'DATE' in field_type:
                                 # 转换日期格式为 YYYYMMDD
                                 data[field] = pd.to_datetime(value).strftime('%Y%m%d') if pd.notna(value) else None
@@ -362,7 +398,7 @@ class DatabaseManager:
                 return True
                 
             except Exception as e:
-                error_msg = f"更新合约数据失败: {str(e)}"
+                error_msg = f"新合约数据失败: {str(e)}"
                 print(error_msg)
                 logging.error(error_msg)
                 if self.connection:
@@ -410,7 +446,7 @@ class DatabaseManager:
             return df
             
         except Exception as e:
-            logging.error(f"获取品种合约数据失败: {str(e)}")
+            logging.error(f"获取种合约数据失败: {str(e)}")
             return None
     
     def get_last_trade_date(self):
@@ -438,7 +474,7 @@ class DatabaseManager:
                 elif current_time.hour < 15:
                     # 如果是周一
                     if current_time.weekday() == 0:
-                        # 返回上周五
+                        # 返上周五
                         last_trade_date = current_date - timedelta(days=3)
                     else:
                         # 返回前一天
@@ -502,70 +538,110 @@ class DatabaseManager:
             logging.error(error_msg)
             return False
     
+    @error_handler(logger=logging)
     def get_main_contracts(self, exchange, fut_code):
         """获取主力合约"""
         try:
-            # 1. 先获取最新交易日期
-            date_query = "SELECT MAX(trade_date) FROM futures_daily_quotes"
+            # 1. 先获取该品种的最新交易日期
+            date_query = """
+            SELECT DATE_FORMAT(MAX(trade_date), '%Y-%m-%d') as latest_date
+            FROM futures_daily_quotes
+            """
+            
             with self.connection.cursor() as cursor:
                 cursor.execute(date_query)
                 latest_date = cursor.fetchone()[0]
                 
                 if not latest_date:
-                    logging.warning("无行情数据")
+                    logging.warning("未找到任何行情数据")
                     return None
-                    
+                
+                logging.debug(f"最新交易日期: {latest_date}")
+                
                 # 2. 获取该品种所有未到期合约在最新交易日的数据
                 query = """
                 SELECT 
-                    b.ts_code,
-                    IFNULL(q.vol, 0) as volume,
-                    IFNULL(q.oi, 0) as position
+                    q.ts_code,
+                    CAST(COALESCE(q.vol, 0) AS DECIMAL(20,4)) as volume,
+                    CAST(COALESCE(q.oi, 0) AS DECIMAL(20,4)) as position,
+                    q.trade_date
                 FROM futures_basic b
-                LEFT JOIN futures_daily_quotes q ON b.ts_code = q.ts_code 
-                    AND q.trade_date = %s
+                LEFT JOIN futures_daily_quotes q 
+                    ON b.ts_code = q.ts_code 
+                    AND DATE(q.trade_date) = DATE(%s)
                 WHERE b.exchange = %s 
                 AND b.fut_code = %s
-                AND b.delist_date >= CURDATE()
+                AND b.delist_date >= %s
+                HAVING volume > 0 OR position > 0
+                ORDER BY (volume * 0.4 + position * 0.6) DESC
                 """
                 
-                cursor.execute(query, (latest_date, exchange, fut_code))
-                rows = cursor.fetchall()
+                logging.debug(f"执行查询: {query}")
+                logging.debug(f"参数: {latest_date}, {exchange}, {fut_code}, {latest_date}")
                 
-                if not rows:
-                    # 如果没有数据，返回最近到期的合约
+                cursor.execute(query, (latest_date, exchange, fut_code, latest_date))
+                contracts_data = cursor.fetchall()
+                
+                if not contracts_data:
+                    # 如果没有找到有成交的合约，使用最近到期的合约作为备选
                     backup_query = """
                     SELECT ts_code
                     FROM futures_basic
                     WHERE exchange = %s
                     AND fut_code = %s
-                    AND delist_date >= CURDATE()
+                    AND delist_date >= %s
                     ORDER BY delist_date ASC
                     LIMIT 1
                     """
-                    cursor.execute(backup_query, (exchange, fut_code))
-                    result = cursor.fetchone()
-                    return result[0] if result else None
+                    cursor.execute(backup_query, (exchange, fut_code, latest_date))
+                    backup_result = cursor.fetchone()
+                    if backup_result:
+                        logging.info(f"使用备选合约: {backup_result[0]} (无成交量数据)")
+                        return backup_result[0]
+                    
+                    logging.warning(f"未找到任何有效合约: {exchange}.{fut_code}")
+                    return None
                 
                 # 3. 找出成交量和持仓量最大的合约
-                max_volume = 0
-                max_position = 0
+                max_score = 0
                 main_contract = None
+                main_volume = 0
+                main_position = 0
                 
-                for ts_code, volume, position in rows:
-                    # 计算得分 (40%，持量60%)
+                for ts_code, volume, position, trade_date in contracts_data:
+                    # 计算得分 (成交量40%，持仓量60%)
                     score = float(volume) * 0.4 + float(position) * 0.6
-                    if score > max_volume + max_position:
-                        max_volume = float(volume)
-                        max_position = float(position)
+                    
+                    logging.info(
+                        f"合约: {ts_code}\n"
+                        f"  交易日期: {trade_date}\n"
+                        f"  成交量: {volume}\n"
+                        f"  持仓量: {position}\n"
+                        f"  得分: {score}"
+                    )
+                    
+                    if score > max_score:
+                        max_score = score
                         main_contract = ts_code
+                        main_volume = volume
+                        main_position = position
                 
                 if main_contract:
-                    logging.info(f"找到主力合约: {main_contract}")
-                return main_contract
+                    logging.info(
+                        f"\n选定主力合约: {main_contract}\n"
+                        f"交易日期: {latest_date}\n"
+                        f"成交量: {main_volume}\n"
+                        f"持仓量: {main_position}\n"
+                        f"最终得分: {max_score}"
+                    )
+                    return main_contract
+                else:
+                    logging.warning(f"未找到 {exchange}.{fut_code} 的主力合约")
+                    return None
                 
         except Exception as e:
-            logging.error(f"获取主力合约失败: {str(e)}")
+            error_msg = f"获取主力合约失败: {str(e)}"
+            logging.error(f"{error_msg}\n{traceback.format_exc()}")
             return None
     
     def get_contract_quotes(self, ts_code, days=1):
@@ -591,38 +667,38 @@ class DatabaseManager:
             logging.error(f"获取合约行失败: {str(e)}")
             return None
     
-    def create_main_contract_table(self):
-        """创建主力合约表"""
-        query = """
-        CREATE TABLE IF NOT EXISTS futures_main_contract (
-            trade_date DATE,
-            exchange VARCHAR(20),
-            fut_code VARCHAR(20),
-            ts_code VARCHAR(20),
-            vol DECIMAL(20,4),
-            amount DECIMAL(20,4),
-            oi DECIMAL(20,4),
-            PRIMARY KEY (trade_date, exchange, fut_code)
-        )
-        """
-        try:
-            with self.connection.cursor() as cursor:
-                cursor.execute(query)
-            self.connection.commit()
-        except Exception as e:
-            logging.error(f"创建主力合约表失败: {str(e)}")
-
+    @error_handler(logger=logging)
     def save_main_contract(self, trade_date, exchange, fut_code, ts_code, vol, amount, oi):
         """保存主力合约信息"""
         try:
-            print(f"\n保存主力合约信息:")
-            print(f"交易日期: {trade_date}")
-            print(f"交易所: {exchange}")
-            print(f"品种: {fut_code}")
-            print(f"主力合约: {ts_code}")
-            print(f"成交量: {vol}")
-            print(f"成交额: {amount}")
-            print(f"持仓量: {oi}")
+            # 确保据类型正确，处理 None 值
+            def safe_float(value, default=0.0):
+                """安全地转换为浮点数"""
+                try:
+                    if value is None or pd.isna(value):
+                        return default
+                    return float(value)
+                except (TypeError, ValueError):
+                    return default
+
+            # 使用安全转换
+            vol = safe_float(vol)
+            amount = safe_float(amount)
+            oi = safe_float(oi)
+            
+            # 格式化日期
+            if isinstance(trade_date, str):
+                try:
+                    trade_date = datetime.strptime(trade_date, '%Y-%m-%d').date()
+                except ValueError as e:
+                    logging.error(f"日期格式错误: {trade_date}, {str(e)}")
+                    return False
+            
+            # 验证必要字段
+            if not all([trade_date, exchange, fut_code, ts_code]):
+                logging.error(f"缺少必要字段: trade_date={trade_date}, exchange={exchange}, "
+                             f"fut_code={fut_code}, ts_code={ts_code}")
+                return False
             
             query = """
             INSERT INTO futures_main_contract 
@@ -636,35 +712,79 @@ class DatabaseManager:
                 oi = VALUES(oi)
             """
             
-            with self.connection.cursor() as cursor:
-                cursor.execute(query, (trade_date, exchange, fut_code, ts_code, vol, amount, oi))
-                self.connection.commit()
-                print("主力合约信息保存成功")
-                return True
+            with self.transaction() as cursor:
+                cursor.execute(query, (
+                    trade_date,
+                    exchange,
+                    fut_code,
+                    ts_code,
+                    vol,
+                    amount,
+                    oi
+                ))
+                
+            logging.info(f"保存主力合约信息成功: {exchange}.{fut_code} -> {ts_code} "
+                        f"(vol={vol}, amount={amount}, oi={oi})")
+            return True
                 
         except Exception as e:
             error_msg = f"保存主力合约信息失败: {str(e)}"
-            print(error_msg)
-            logging.error(error_msg)
+            logging.error(f"{error_msg}\n{traceback.format_exc()}")
             return False
 
-    def get_main_contract(self, exchange, fut_code, trade_date=None):
-        """获取主力合约"""
-        if not trade_date:
-            trade_date = datetime.now().strftime('%Y-%m-%d')
-            
-        query = """
-        SELECT ts_code
-        FROM futures_main_contract
-        WHERE exchange = %s 
-        AND fut_code = %s
-        AND trade_date = %s
-        """
+    def create_main_contract_table(self):
+        """创建主力合约表"""
         try:
+            # 先删除旧表（如果存在）
+            drop_query = """
+            DROP TABLE IF EXISTS futures_main_contract
+            """
+            
+            # 创建新表
+            create_query = """
+            CREATE TABLE futures_main_contract (
+                trade_date DATE NOT NULL,
+                exchange VARCHAR(20) NOT NULL,
+                fut_code VARCHAR(20) NOT NULL,
+                ts_code VARCHAR(20) NOT NULL,
+                vol DECIMAL(20,4) DEFAULT 0,
+                amount DECIMAL(20,4) DEFAULT 0,
+                oi DECIMAL(20,4) DEFAULT 0,
+                update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                PRIMARY KEY (trade_date, exchange, fut_code)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+            """
+            
+            with self.transaction() as cursor:
+                cursor.execute(drop_query)
+                cursor.execute(create_query)
+                logging.info("主力合约表重建成功")
+            return True
+            
+        except Exception as e:
+            error_msg = f"创建主力合约表失败: {str(e)}"
+            logging.error(f"{error_msg}\n{traceback.format_exc()}")
+            return False
+    
+    def get_main_contract(self, exchange, fut_code, trade_date=None):
+        """获取指定日期的主力合约"""
+        try:
+            query = """
+            SELECT ts_code
+            FROM futures_main_contract
+            WHERE exchange = %s 
+            AND fut_code = %s
+            AND trade_date = %s
+            """
+            
+            if trade_date is None:
+                trade_date = datetime.now().strftime('%Y-%m-%d')
+            
             with self.connection.cursor() as cursor:
                 cursor.execute(query, (exchange, fut_code, trade_date))
                 result = cursor.fetchone()
                 return result[0] if result else None
+                
         except Exception as e:
             logging.error(f"获取主力合约失败: {str(e)}")
             return None
@@ -717,112 +837,168 @@ class DatabaseManager:
             logging.error(error_msg)
             return None
     
+    @error_handler(logger=logging)
     def save_quotes(self, df):
-        """保存期货行情数据"""
+        """保存货行情数据"""
         if df is None or df.empty:
             return False
             
+        with self.transaction() as cursor:
+            # 使用QueryBuilder构建SQL
+            fields = ['ts_code', 'trade_date', 'open', 'high', 'low', 'close', 
+                     'pre_close', 'change_rate', 'vol', 'amount', 'oi']
+            insert_query = QueryBuilder.build_insert('futures_daily_quotes', fields)
+            
+            for _, row in df.iterrows():
+                # 检查数据是否存在
+                check_query = QueryBuilder.build_select(
+                    'futures_daily_quotes',
+                    'COUNT(*)',
+                    'ts_code = %s AND trade_date = %s'
+                )
+                cursor.execute(check_query, (row['ts_code'], row['trade_date']))
+                if cursor.fetchone()[0] > 0:
+                    continue
+                
+                # 准备数据并插入
+                data = self._prepare_quote_data(row)
+                cursor.execute(insert_query, [data[field] for field in fields])
+                
+        return True
+
+    def _prepare_quote_data(self, row):
+        """准备行情数据"""
+        return {
+            'ts_code': str(row['ts_code'])[:20],
+            'trade_date': row['trade_date'],
+            'open': float(row['open']) if pd.notnull(row['open']) else None,
+            'high': float(row['high']) if pd.notnull(row['high']) else None,
+            'low': float(row['low']) if pd.notnull(row['low']) else None,
+            'close': float(row['close']) if pd.notnull(row['close']) else None,
+            'pre_close': float(row['pre_close']) if pd.notnull(row['pre_close']) else None,
+            'change_rate': self._calculate_change_rate(row),
+            'vol': float(row['vol']) if pd.notnull(row['vol']) else None,
+            'amount': float(row['amount']) if pd.notnull(row['amount']) else None,
+            'oi': float(row['oi']) if pd.notnull(row['oi']) else None
+        }
+
+    @staticmethod
+    def _calculate_change_rate(row):
+        """计算涨跌幅"""
+        if pd.notnull(row['close']) and pd.notnull(row['pre_close']) and row['pre_close'] != 0:
+            return ((row['close'] - row['pre_close']) / row['pre_close'] * 100)
+        return None
+    
+    @error_handler(logger=logging)
+    def update_main_contracts(self):
+        """更新主力合约信息"""
         try:
-            # 确保数据库连接有效
-            if not self.ensure_connected():
-                error_msg = "数据库连接失败"
-                print(error_msg)
-                logging.error(error_msg)
-                return False
+            # 1. 获取最新交易日期的所有行情数据
+            query = """
+            SELECT 
+                q.ts_code COLLATE utf8mb4_unicode_ci,
+                b.exchange,
+                b.fut_code,
+                q.vol,
+                q.oi,
+                q.amount,
+                q.trade_date
+            FROM futures_daily_quotes q
+            JOIN futures_basic b ON q.ts_code COLLATE utf8mb4_unicode_ci = b.ts_code
+            WHERE q.trade_date = (
+                SELECT MAX(trade_date) 
+                FROM futures_daily_quotes
+            )
+            AND b.delist_date > DATE_FORMAT(NOW(), '%Y-%m-%d')
+            """
+            
+            with self.connection.cursor() as cursor:
+                cursor.execute(query)
+                all_data = cursor.fetchall()
                 
-            cursor = self.connection.cursor()
-            try:
-                # 获取表结构信息
-                cursor.execute("DESCRIBE futures_daily_quotes")
-                field_info = {row[0]: row[1] for row in cursor.fetchall()}
-                print("\n表结构信息:")
-                for field, type_info in field_info.items():
-                    print(f"字段: {field}, 类型: {type_info}")
+                if not all_data:
+                    logging.warning("未找到任何行情数据")
+                    return 0, 0
                 
-                # 逐行插入数据
-                for _, row in df.iterrows():
+                # 2. 按交易所和品种分组数据
+                grouped_data = {}
+                for row in all_data:
+                    ts_code, exchange, fut_code, vol, oi, amount, trade_date = row
+                    key = (exchange, fut_code)
+                    if key not in grouped_data:
+                        grouped_data[key] = []
+                    grouped_data[key].append({
+                        'ts_code': ts_code,
+                        'vol': float(vol) if vol is not None else 0,
+                        'oi': float(oi) if oi is not None else 0,
+                        'amount': float(amount) if amount is not None else 0,
+                        'trade_date': trade_date
+                    })
+                
+                # 3. 处理每个品种的数据
+                success_count = 0
+                fail_count = 0
+                
+                for (exchange, fut_code), contracts in grouped_data.items():
                     try:
-                        # 首先检查数据是否已存在
-                        check_query = """
-                        SELECT COUNT(*) FROM futures_daily_quotes 
-                        WHERE ts_code = %s AND trade_date = %s
-                        """
-                        cursor.execute(check_query, (row['ts_code'], row['trade_date']))
-                        if cursor.fetchone()[0] > 0:
-                            print(f"数据已存在，跳过: {row['ts_code']} {row['trade_date']}")
-                            continue
+                        logging.info(f"\n处理 {exchange} {fut_code}")
                         
-                        # 计算涨跌幅
-                        change_rate = ((row['close'] - row['pre_close']) / row['pre_close'] * 100) if pd.notnull(row['close']) and pd.notnull(row['pre_close']) and row['pre_close'] != 0 else None
+                        # 计算每个合约的得分
+                        max_score = 0
+                        main_contract = None
+                        main_data = None
                         
-                        # 准备插入数据
-                        insert_data = {
-                            'ts_code': str(row['ts_code'])[:20],  # 限制长度
-                            'trade_date': row['trade_date'],
-                            'open': float(row['open']) if pd.notnull(row['open']) else None,
-                            'high': float(row['high']) if pd.notnull(row['high']) else None,
-                            'low': float(row['low']) if pd.notnull(row['low']) else None,
-                            'close': float(row['close']) if pd.notnull(row['close']) else None,
-                            'pre_close': float(row['pre_close']) if pd.notnull(row['pre_close']) else None,
-                            'change_rate': change_rate,
-                            'vol': float(row['vol']) if pd.notnull(row['vol']) else None,
-                            'amount': float(row['amount']) if pd.notnull(row['amount']) else None,
-                            'oi': float(row['oi']) if pd.notnull(row['oi']) else None,
-                            'oi_chg': None  # 暂时没有这个数据
-                        }
+                        for contract in contracts:
+                            score = contract['vol'] * 0.4 + contract['oi'] * 0.6
+                            logging.debug(
+                                f"合约: {contract['ts_code']}\n"
+                                f"  成交量: {contract['vol']}\n"
+                                f"  持仓量: {contract['oi']}\n"
+                                f"  得分: {score}"
+                            )
+                            
+                            if score > max_score:
+                                max_score = score
+                                main_contract = contract['ts_code']
+                                main_data = contract
                         
-                        # 检查数据长度
-                        for field, value in insert_data.items():
-                            if value is not None and field in field_info:
-                                field_type = field_info[field].upper()
-                                if 'VARCHAR' in field_type:
-                                    max_length = int(field_type.split('(')[1].split(')')[0])
-                                    if len(str(value)) > max_length:
-                                        error_msg = (
-                                            f"数据长度超出限制:\n"
-                                            f"表名: futures_daily_quotes\n"
-                                            f"字段名: {field}\n"
-                                            f"字段类型: {field_type}\n"
-                                            f"最大长度: {max_length}\n"
-                                            f"实际长度: {len(str(value))}\n"
-                                            f"值: {value}"
-                                        )
-                                        print(error_msg)
-                                        raise ValueError(error_msg)
-                        
-                        # 构建 SQL 语句
-                        fields = list(insert_data.keys())
-                        placeholders = ', '.join(['%s'] * len(fields))
-                        
-                        insert_query = f"""
-                        INSERT INTO futures_daily_quotes ({', '.join(fields)})
-                        VALUES ({placeholders})
-                        """
-                        
-                        cursor.execute(insert_query, tuple(insert_data.values()))
-                        
+                        if main_contract and main_data:
+                            # 保存主力合约信息
+                            if self.save_main_contract(
+                                trade_date=main_data['trade_date'],
+                                exchange=exchange,
+                                fut_code=fut_code,
+                                ts_code=main_contract,
+                                vol=main_data['vol'],
+                                amount=main_data['amount'],
+                                oi=main_data['oi']
+                            ):
+                                success_count += 1
+                                logging.info(f"更新{exchange} {fut_code}主力合约成功: {main_contract}")
+                            else:
+                                fail_count += 1
+                                logging.error(f"保存{exchange} {fut_code}主力合约失败")
+                        else:
+                            fail_count += 1
+                            logging.warning(f"未找到{exchange} {fut_code}的主力合约")
+                            
                     except Exception as e:
-                        print(f"插入数据失败: {str(e)}")
-                        print(f"问题数据: {insert_data}")
-                        raise
-                        
-                self.connection.commit()
-                cursor.close()
-                return True
+                        fail_count += 1
+                        error_msg = f"更新{exchange} {fut_code}主力合约失败: {str(e)}"
+                        logging.error(error_msg)
+                        continue
                 
-            except Exception as e:
-                error_msg = f"保存行情数据失败: {str(e)}"
-                print(error_msg)
-                logging.error(error_msg)
-                if self.connection:
-                    self.connection.rollback()
-                return False
-            finally:
-                if cursor:
-                    cursor.close()
+                summary = (
+                    f"\n{'='*50}\n"
+                    f"主力合约更新完成\n"
+                    f"成功: {success_count}\n"
+                    f"失败: {fail_count}\n"
+                    f"{'='*50}"
+                )
+                logging.info(summary)
+                return success_count, fail_count
                 
         except Exception as e:
-            error_msg = f"保存行情数据失败: {str(e)}"
-            print(error_msg)
-            logging.error(error_msg)
-            return False
+            error_msg = f"更新主力合约失败: {str(e)}"
+            logging.error(f"{error_msg}\n{traceback.format_exc()}")
+            raise

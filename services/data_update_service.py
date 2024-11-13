@@ -7,6 +7,8 @@ import pandas as pd
 import traceback
 import sys
 import time
+from utils.decorators import error_handler
+from utils.exceptions import DatabaseError
 
 class DataUpdateService:
     def __init__(self):
@@ -22,79 +24,63 @@ class DataUpdateService:
             logging.error(error_msg)
             raise
     
+    def _update_progress(self, current, total, message, callback=None):
+        """统一处理进度更新"""
+        if callback:
+            progress = int(current * 100 / total)
+            callback(progress, message)
+        print(f"\n进度: {current}/{total} - {message}")
+            
+    @error_handler(logger=logging)
     def update_all_data(self, progress_callback=None):
         """更新所有数据"""
+        success_count = 0
+        fail_count = 0
+        
         try:
             if not self.db.connect():
-                error_msg = "数据库连接失败"
-                print(error_msg, file=sys.stderr)
-                raise Exception(error_msg)
-                
-            # 获取所有有效合约
-            if progress_callback:
-                progress_callback(0, "获取有效合约...")
-            print("获取有效合约列表...")
+                raise DatabaseError("数据库连接失败")
+            
+            # 获取有效合约
+            self._update_progress(0, 100, "获取有效合约...", progress_callback)
             contracts_df = self.db.get_valid_contracts()
             
-            if contracts_df is None:
-                error_msg = "无法获取合约信息"
-                print(error_msg, file=sys.stderr)
-                raise Exception(error_msg)
-                
-            if len(contracts_df) == 0:
-                error_msg = "无有效合约信息"
-                print(error_msg, file=sys.stderr)
-                raise Exception(error_msg)
-                
-            # 更新行情数据
-            total_contracts = len(contracts_df)
-            print(f"开始更新{total_contracts}个有效合约的行情数据...")
+            if contracts_df is None or len(contracts_df) == 0:
+                raise DatabaseError("无有效合约信息")
             
-            success_count = 0
-            fail_count = 0
-
             # 获取最后交易日
             last_trade_date = self.db.get_last_trade_date()
             if not last_trade_date:
-                error_msg = "无法获取最新交易日"
-                print(error_msg)
-                raise Exception(error_msg)
-
-            print(f"计算得到的最新交易日: {last_trade_date}")
-
+                raise DatabaseError("无法获取最新交易日")
+            
+            # 更新行情数据
+            total = len(contracts_df)
             
             for i, (_, contract) in enumerate(contracts_df.iterrows()):
-                ts_code = contract['ts_code']
-                print(f"更新合约 {ts_code} ({i+1}/{total_contracts})")
-                
-                if progress_callback:
-                    progress_callback(
-                        int((i + 1) * 100 / total_contracts),
-                        f"更新行情数据 ({i+1}/{total_contracts}): {ts_code}"
+                try:
+                    self._update_progress(
+                        i + 1, 
+                        total,
+                        f"更新行情数据 ({i+1}/{total}): {contract['ts_code']}",
+                        progress_callback
                     )
                     
-                try:
-                    if self.update_contract_quotes(ts_code,last_trade_date):
+                    if self.update_contract_quotes(contract['ts_code'], last_trade_date):
                         success_count += 1
                     else:
                         fail_count += 1
+                        
                 except Exception as e:
                     fail_count += 1
-                    print(f"更新合约{ts_code}失败: {str(e)}", file=sys.stderr)
-                    
-            msg = f"数据更新完成，成功: {success_count}，失败: {fail_count}"
-            print(msg)
-            if progress_callback:
-                progress_callback(100, msg)
-                
-        except Exception as e:
-            error_msg = f"数据更新失败: {str(e)}\n{traceback.format_exc()}"
-            print(error_msg, file=sys.stderr)
-            logging.error(error_msg)
-            if progress_callback:
-                progress_callback(-1, f"更新失败: {str(e)}")
-            raise
+                    logging.error(f"更新合约{contract['ts_code']}失败: {str(e)}")
             
+            return success_count, fail_count
+            
+        except Exception as e:
+            error_msg = f"更新数据失败: {str(e)}\n{traceback.format_exc()}"
+            logging.error(error_msg)
+            raise
+        
     def update_futures_basic(self):
         """更新期货基础信息"""
         self.rate_limiter.acquire()
@@ -106,29 +92,26 @@ class DataUpdateService:
         """获取所有有效合约"""
         return self.db.get_contracts()
         
+    @error_handler(logger=logging)
     def update_contract_quotes(self, ts_code, last_trade_date=None):
         """更新单个合约的行情数据"""
         try:
             if not self.db.connect():
-                error_msg = "数据库连接失败"
-                print(error_msg)
-                raise Exception(error_msg)
-                
+                raise DatabaseError("数据库连接失败")
+            
             # 如果没有传入交易日，则获取最新交易日
             if last_trade_date is None:
                 last_trade_date = self.db.get_last_trade_date()
                 if not last_trade_date:
-                    error_msg = "无法获取最新交易日"
-                    print(error_msg)
-                    raise Exception(error_msg)
-                
+                    raise DatabaseError("无法获取最新交易日")
+            
             print(f"更新{ts_code}在{last_trade_date}的行情数据")
-                
+            
             # 检查是否需要更新
             if self.db.check_quote_exists(ts_code, last_trade_date):
                 print(f"{ts_code}在{last_trade_date}的行情数据已存在，跳过更新")
                 return True
-                
+            
             # 获取行情数据前等待限流器许可
             self.rate_limiter.acquire()
             try:
@@ -138,36 +121,33 @@ class DataUpdateService:
                     start_date=last_trade_date.strftime('%Y%m%d'),
                     end_date=last_trade_date.strftime('%Y%m%d')
                 )
-            except ValueError as ve:
-                error_msg = f"Tushare API错误: {str(ve)}"
-                print(error_msg)
-                raise Exception(error_msg)
             except Exception as e:
                 error_msg = f"获取行情数据失败: {str(e)}"
                 print(error_msg)
-                raise Exception(error_msg)
+                logging.error(f"{error_msg}\n{traceback.format_exc()}")
+                raise DatabaseError(error_msg)
             
             if df is None:
                 print(f"{ts_code}在{last_trade_date}无可用行情数据")
                 return False
-                
+            
             if len(df) == 0:
                 print(f"{ts_code}在{last_trade_date}无新行情数据")
                 return True
-                
+            
             # 保存数据
             if not self.db.save_quotes(df):
                 error_msg = "保存行情数据失败"
                 print(error_msg)
-                raise Exception(error_msg)
-                
+                raise DatabaseError(error_msg)
+            
             print(f"{ts_code}在{last_trade_date}的行情数据更新成功")
             return True
             
         except Exception as e:
-            error_msg = f"更新合约{ts_code}行情数据失败: {str(e)}\n{traceback.format_exc()}"
+            error_msg = f"更新合约{ts_code}行情数据失败: {str(e)}"
             print(error_msg)
-            logging.error(error_msg)
+            logging.error(f"{error_msg}\n{traceback.format_exc()}")
             raise
             
     def batch_update_quotes(self, ts_codes, last_trade_date, days=1):

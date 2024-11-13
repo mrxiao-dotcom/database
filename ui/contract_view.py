@@ -52,6 +52,7 @@ class ContractView(QWidget):
             self.db = None
             self.current_exchange = None
             self.current_fut_code = None
+            self.main_contracts = {}  # 用于存储主力合约信息
             
             # 设置UI
             self.setup_ui()
@@ -200,10 +201,10 @@ class ContractView(QWidget):
             quote_layout.addLayout(quote_header)
             
             self.quote_table = QTableWidget()
-            self.quote_table.setColumnCount(9)
+            self.quote_table.setColumnCount(8)  # 减少一列
             self.quote_table.setHorizontalHeaderLabels([
                 "交易日期", "开盘价", "最高价", "最低价", "收盘价",
-                "成交量", "成交额", "持仓量", "是否主力"
+                "成交量", "成交额", "持仓量"
             ])
             quote_layout.addWidget(self.quote_table)
             
@@ -447,55 +448,69 @@ class ContractView(QWidget):
         """更新表格数据"""
         if df is None:
             return
-            
+        
         try:
-            # 获取主力合约信息
-            main_contract = None
-            if hasattr(self, 'current_exchange') and hasattr(self, 'current_fut_code'):
-                main_contract = self.db.get_main_contracts(
-                    self.current_exchange,
-                    self.current_fut_code
-                )
-                logging.info(f"当前主力合约: {main_contract}")
+            # 获取当前所���主力合约
+            self.main_contracts = self._get_current_main_contracts()
             
             self.contract_table.setRowCount(len(df))
             for row, (index, data) in enumerate(df.iterrows()):
-                # 合约代码
-                ts_code_item = QTableWidgetItem(str(data['ts_code']))
-                self.contract_table.setItem(row, 0, ts_code_item)
+                ts_code = str(data['ts_code'])
                 
-                # 名称（添加主力合约标记）
-                is_main = data['ts_code'] == main_contract if main_contract else False
-                name = str(data['name'])
+                # 检查是否是主力合约
+                is_main = ts_code in self.main_contracts.values()
+                
+                # 设置所有列的数据
+                items = [
+                    QTableWidgetItem(ts_code),
+                    QTableWidgetItem(str(data['name'])),
+                    QTableWidgetItem(str(data['exchange'])),
+                    QTableWidgetItem(str(data['fut_code'])),
+                    QTableWidgetItem(str(data['delist_date']))
+                ]
+                
+                # 如果是主力合约，设置整行的样式
                 if is_main:
-                    name += " [主力]"  # 使用更明显的标记
-                name_item = QTableWidgetItem(name)
+                    for item in items:
+                        # 设置红色字体
+                        item.setForeground(QBrush(QColor("#FF4444")))
+                        # 设置字体加粗
+                        font = item.font()
+                        font.setBold(True)
+                        item.setFont(font)
                 
-                if is_main:
-                    # 设置主力合约的样式
-                    name_item.setForeground(QBrush(QColor("#1e88e5")))  # 蓝色文
-                    font = name_item.font()
-                    font.setBold(True)  # 加粗
-                    name_item.setFont(font)
-                self.contract_table.setItem(row, 1, name_item)
-                
-                # 其他列
-                self.contract_table.setItem(row, 2, QTableWidgetItem(str(data['exchange'])))
-                self.contract_table.setItem(row, 3, QTableWidgetItem(str(data['fut_code'])))
-                self.contract_table.setItem(row, 4, QTableWidgetItem(str(data['delist_date'])))
-                
-                # 如果是主力合约，设置整行背景色
-                if is_main:
-                    for col in range(self.contract_table.columnCount()):
-                        item = self.contract_table.item(row, col)
-                        if item:
-                            item.setBackground(QBrush(QColor("#f3f7ff")))  # 更淡的背景色
+                # 将项目添加到表格
+                for col, item in enumerate(items):
+                    self.contract_table.setItem(row, col, item)
             
             # 调整列宽以适应内容
             self.contract_table.resizeColumnsToContents()
             
         except Exception as e:
             logging.error(f"更新表格失败: {str(e)}\n{traceback.format_exc()}")
+    
+    def _get_current_main_contracts(self):
+        """获取当前所有主力合约"""
+        try:
+            query = """
+            SELECT exchange, fut_code, ts_code
+            FROM futures_main_contract
+            WHERE trade_date = (
+                SELECT MAX(trade_date)
+                FROM futures_main_contract
+            )
+            """
+            
+            with self.db.connection.cursor() as cursor:
+                cursor.execute(query)
+                results = cursor.fetchall()
+                
+                # 创建映射字典 {(exchange, fut_code): ts_code}
+                return {(row[0], row[1]): row[2] for row in results}
+                
+        except Exception as e:
+            logging.error(f"获取主力合约失败: {str(e)}")
+            return {}
     
     def show_db_config(self):
         """显示数据库配置对话框"""
@@ -585,12 +600,6 @@ class ContractView(QWidget):
                 self.quote_table.setRowCount(0)
                 return
                 
-            # 获取主力合约信息
-            main_contract = self.db.get_main_contracts(
-                self.current_exchange,
-                self.current_fut_code
-            )
-            
             self.quote_table.setRowCount(len(df))
             for row, (index, data) in enumerate(df.iterrows()):
                 self.quote_table.setItem(row, 0, QTableWidgetItem(str(data['trade_date'])))
@@ -601,18 +610,12 @@ class ContractView(QWidget):
                 self.quote_table.setItem(row, 5, QTableWidgetItem(f"{data['vol']:.0f}"))
                 self.quote_table.setItem(row, 6, QTableWidgetItem(f"{data['amount']:.2f}"))
                 self.quote_table.setItem(row, 7, QTableWidgetItem(f"{data['oi']:.0f}"))
-                
-                # 标记主力合约
-                is_main = "是" if ts_code == main_contract else "否"
-                main_item = QTableWidgetItem(is_main)
-                if is_main == "是":
-                    main_item.setForeground(QBrush(QColor("#1e88e5")))
-                self.quote_table.setItem(row, 8, main_item)
-                
+            
+            # 调整列宽以适应内容
             self.quote_table.resizeColumnsToContents()
             
         except Exception as e:
-            logging.error(f"加载行情数据失败: {str(e)}")
+            logging.error(f"加载行情数据失败: {str(e)}\n{traceback.format_exc()}")
             QMessageBox.warning(self, "警告", "加载行情数据失败")
     
     def update_quotes(self):
@@ -681,7 +684,7 @@ class ContractView(QWidget):
                                 except Exception as e:
                                     fail_count += 1
                                     error_msg = f"更新合约{ts_code}失败: {str(e)}"
-                                    print(f"错误: {error_msg}")  # 添���控制台输出
+                                    print(f"错误: {error_msg}")  # 添加控制台输出
                                     logging.error(error_msg)
                                     
                             msg = f"更新完成\n成功: {success}\n跳过: {skip}\n失败: {fail}"
@@ -693,8 +696,8 @@ class ContractView(QWidget):
                             print(f"错误: {error_msg}")  # 添加控制台输出
                             self.finished.emit(False, error_msg)
                             
-                        def cancel(self):
-                            self.is_cancelled = True
+                    def cancel(self):
+                        self.is_cancelled = True
                 
                 # 创建并启动线程
                 self.update_thread = UpdateThread(service)
@@ -725,7 +728,7 @@ class ContractView(QWidget):
                 print(f"错误: {error_msg}")  # 添加控制台输出
                 logging.error(error_msg)
                 progress_dialog.accept()
-                QMessageBox.warning(self, "警告", f"更新初始化失败: {str(e)}")
+                QMessageBox.warning(self, "警告", f"更新初始化失: {str(e)}")
                 self.update_quote_btn.setEnabled(True)
                 
         except Exception as e:
@@ -919,7 +922,7 @@ class ContractView(QWidget):
             logging.error(error_msg)
             QMessageBox.warning(self, "警告", f"更新失败: {str(e)}")
             self.update_basic_btn.setEnabled(True)
-    
+
     def update_main_contracts(self):
         """更新最新主力合约信息"""
         try:
@@ -927,128 +930,50 @@ class ContractView(QWidget):
             if not self.db or not self.db.connection:
                 QMessageBox.warning(self, "警告", "请先连接数据库")
                 return
-            
+
             # 禁用更新按钮
             self.update_main_btn.setEnabled(False)
-            
+
             # 显示进度对话框
             progress_dialog = ProgressDialog(self, "更新主力合约信息")
             progress_dialog.show()
-            
+
             # 创建更新线程
             class UpdateMainThread(QThread):
                 progress_updated = pyqtSignal(int, str)
                 finished = pyqtSignal(bool, str)
-                
-                def __init__(self, service):
+
+                def __init__(self, db_manager):
                     super().__init__()
-                    self.service = service
-                    self.is_cancelled = False
-                    
+                    self.db = db_manager
+
                 def run(self):
                     try:
-                        # 获取最新交易日
-                        latest_date = self.service.db.get_last_trade_date()
-                        if not latest_date:
-                            self.finished.emit(False, "无法获取最新交易日")
-                            return
-                            
-                        # 获取所有交易所
-                        exchanges = self.service.db.get_exchanges()
-                        if not exchanges:
-                            self.finished.emit(False, "无可用交易所")
-                            return
-                            
-                        total_success = 0
-                        total_fail = 0
-                        total_steps = 0
-                        current_step = 0
-                        
-                        # 计算总步骤数
-                        for exchange in exchanges:
-                            fut_codes = self.service.db.get_future_codes(exchange)
-                            total_steps += len(fut_codes) if fut_codes else 0
-                        
-                        # 遍历每个交易所和品种
-                        for exchange in exchanges:
-                            if self.is_cancelled:
-                                self.finished.emit(True, "已取消更新")
-                                return
-                                
-                            fut_codes = self.service.db.get_future_codes(exchange)
-                            if not fut_codes:
-                                continue
-                                
-                            for fut_code in fut_codes:
-                                if self.is_cancelled:
-                                    self.finished.emit(True, "已取消更新")
-                                    return
-                                    
-                                current_step += 1
-                                self.progress_updated.emit(
-                                    int(current_step * 100 / total_steps),
-                                    f"更新 {exchange} {fut_code} ({current_step}/{total_steps})"
-                                )
-                                
-                                try:
-                                    # 从数据库获取主力合约
-                                    main_contract = self.service.db.get_main_contracts(exchange, fut_code)
-                                    
-                                    if main_contract:
-                                        print(f"找到主力合约: {main_contract}")
-                                        # 获取主力合约的最新行情数据
-                                        df = self.service.db.get_contract_quotes(main_contract, days=1)
-                                        if df is not None and not df.empty:
-                                            row = df.iloc[0]
-                                            # 保存主力合约信息
-                                            if self.service.db.save_main_contract(
-                                                trade_date=latest_date,
-                                                exchange=exchange,
-                                                fut_code=fut_code,
-                                                ts_code=main_contract,
-                                                vol=float(row['vol']) if 'vol' in row else 0,
-                                                amount=float(row['amount']) if 'amount' in row else 0,
-                                                oi=float(row['oi']) if 'oi' in row else 0
-                                            ):
-                                                total_success += 1
-                                                print(f"保存主力合约信息成功")
-                                            else:
-                                                total_fail += 1
-                                                print(f"保存主力合约信息失败")
-                                        else:
-                                            total_fail += 1
-                                            print(f"未找到主力合约{main_contract}的行情数据")
-                                    else:
-                                        total_fail += 1
-                                        print(f"未找到主力合约")
-                                        
-                                except Exception as e:
-                                    total_fail += 1
-                                    error_msg = f"更新{exchange} {fut_code}主力合约失败: {str(e)}"
-                                    print(error_msg)
-                                    logging.error(error_msg)
-                                    continue
-                                    
-                        msg = f"主力合约更新完成\n成功: {total_success}\n失败: {total_fail}"
+                        self.progress_updated.emit(10, "开始更新主力合约...")
+
+                        # 调用数据库管理器的批量更新方法
+                        success_count, fail_count = self.db.update_main_contracts()
+
+                        # 构建结果消息
+                        msg = (
+                            f"主力合约更新完成\n"
+                            f"成功: {success_count}\n"
+                            f"失败: {fail_count}"
+                        )
                         self.finished.emit(True, msg)
-                        
+
                     except Exception as e:
-                        self.finished.emit(False, str(e))
-                        
-                def cancel(self):
-                    self.is_cancelled = True
-            
+                        error_msg = f"更新失败: {str(e)}"
+                        logging.error(f"{error_msg}\n{traceback.format_exc()}")
+                        self.finished.emit(False, error_msg)
+
             try:
-                # 创建更新服务
-                service = DataUpdateService()
-                
                 # 创建并启动线程
-                self.update_main_thread = UpdateMainThread(service)
-                
+                self.update_main_thread = UpdateMainThread(self.db)
+
                 # 连接信号
                 self.update_main_thread.progress_updated.connect(progress_dialog.update_progress)
-                progress_dialog.cancelled.connect(self.update_main_thread.cancel)
-                
+
                 def on_update_finished(success, message):
                     progress_dialog.accept()
                     if success:
@@ -1059,23 +984,21 @@ class ContractView(QWidget):
                     else:
                         QMessageBox.warning(self, "警告", message)
                     self.update_main_btn.setEnabled(True)
-                    
+
                 self.update_main_thread.finished.connect(on_update_finished)
-                
+
                 # 启动线程
                 self.update_main_thread.start()
-                
+
             except Exception as e:
                 error_msg = f"创建更新线程失败: {str(e)}\n{traceback.format_exc()}"
-                print(error_msg)
                 logging.error(error_msg)
                 progress_dialog.accept()
                 QMessageBox.warning(self, "警告", f"更新初始化失败: {str(e)}")
                 self.update_main_btn.setEnabled(True)
-                
+
         except Exception as e:
             error_msg = f"更新主力合约信息失败: {str(e)}\n{traceback.format_exc()}"
-            print(error_msg)
             logging.error(error_msg)
             QMessageBox.warning(self, "警告", f"更新失败: {str(e)}")
             self.update_main_btn.setEnabled(True)
