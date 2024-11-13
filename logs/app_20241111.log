@@ -1,0 +1,1294 @@
+2024-11-11 22:16:28,655 [INFO] 日志系统初始化完成
+2024-11-11 22:16:28,925 [ERROR] 获取交易所信息失败: 您的token不对，请确认。
+2024-11-11 22:16:29,034 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:16:29,035 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:16:29,035 [INFO] Scheduler started
+2024-11-11 22:16:29,035 [INFO] 定时任务调度器启动成功
+2024-11-11 22:23:38,148 [INFO] 日志系统初始化完成
+2024-11-11 22:25:01,419 [INFO] 日志系统初始化完成
+2024-11-11 22:26:34,349 [INFO] 日志系统初始化完成
+2024-11-11 22:27:08,237 [INFO] 日志系统初始化完成
+2024-11-11 22:27:08,237 [INFO] 应用程序启动
+2024-11-11 22:28:43,742 [INFO] 日志系统初始化完成
+2024-11-11 22:28:43,742 [INFO] 应用程序启动
+2024-11-11 22:31:26,671 [INFO] 日志系统初始化完成
+2024-11-11 22:31:26,671 [INFO] 应用程序启动
+2024-11-11 22:32:53,452 [INFO] 日志系统初始化完成
+2024-11-11 22:32:53,453 [INFO] 应用程序启动
+2024-11-11 22:33:49,605 [INFO] 日志系统初始化完成
+2024-11-11 22:33:49,606 [INFO] 应用程序启动
+2024-11-11 22:33:49,618 [INFO] 开始初始化主窗口
+2024-11-11 22:33:49,618 [INFO] 设置窗口基本属性完成
+2024-11-11 22:33:49,618 [INFO] 创建中心部件完成
+2024-11-11 22:33:49,618 [INFO] 创建标签页控件完成
+2024-11-11 22:36:01,083 [INFO] 日志系统初始化完成
+2024-11-11 22:36:01,083 [INFO] 应用程序启动
+2024-11-11 22:36:01,096 [INFO] 开始初始化主窗口
+2024-11-11 22:36:01,096 [INFO] 设置窗口基本属性完成
+2024-11-11 22:36:01,096 [INFO] 创建中心部件完成
+2024-11-11 22:36:01,096 [INFO] 创建标签页控件完成
+2024-11-11 22:36:01,096 [INFO] 开始初始化ContractView
+2024-11-11 22:37:28,771 [INFO] 日志系统初始化完成
+2024-11-11 22:37:28,771 [INFO] 应用程序启动
+2024-11-11 22:37:28,784 [INFO] 开始初始化主窗口
+2024-11-11 22:37:28,784 [INFO] 设置窗口基本属性完成
+2024-11-11 22:37:28,784 [INFO] 创建中心部件完成
+2024-11-11 22:37:28,785 [INFO] 创建标签页控件完成
+2024-11-11 22:37:28,785 [INFO] 开始初始化ContractView
+2024-11-11 22:37:28,785 [INFO] 开始设置UI
+2024-11-11 22:37:28,785 [INFO] 交易所标签页创建完成
+2024-11-11 22:37:28,791 [INFO] 表格创建完成
+2024-11-11 22:37:28,791 [INFO] UI设置完成
+2024-11-11 22:37:28,792 [INFO] 添加合约信息标签页完成
+2024-11-11 22:37:28,792 [INFO] 主窗口界面初始化完成
+2024-11-11 22:37:28,850 [INFO] 主窗口显示事件触发
+2024-11-11 22:37:28,853 [INFO] 主窗口创建成功
+2024-11-11 22:37:28,853 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:37:28,855 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:37:28,856 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:37:28,856 [INFO] Scheduler started
+2024-11-11 22:37:28,856 [DEBUG] Looking for jobs to run
+2024-11-11 22:37:28,856 [INFO] 定时任务调度器启动成功
+2024-11-11 22:37:28,856 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 66151.143188 seconds)
+2024-11-11 22:37:28,856 [INFO] 定时任务设置完成
+2024-11-11 22:37:28,891 [INFO] 开始初始化数据库连接
+2024-11-11 22:38:28,512 [INFO] 日志系统初始化完成
+2024-11-11 22:38:28,512 [INFO] 应用程序启动
+2024-11-11 22:38:28,529 [INFO] 开始初始化主窗口
+2024-11-11 22:38:28,529 [INFO] 设置窗口基本属性完成
+2024-11-11 22:38:28,529 [INFO] 创建中心部件完成
+2024-11-11 22:38:28,529 [INFO] 创建标签页控件完成
+2024-11-11 22:38:28,530 [INFO] 开始初始化ContractView
+2024-11-11 22:38:28,530 [INFO] 开始设置UI
+2024-11-11 22:38:28,530 [INFO] 交易所标签页创建完成
+2024-11-11 22:38:28,539 [INFO] 表格创建完成
+2024-11-11 22:38:28,539 [INFO] UI设置完成
+2024-11-11 22:38:28,540 [INFO] 添加合约信息标签页完成
+2024-11-11 22:38:28,540 [INFO] 主窗口界面初始化完成
+2024-11-11 22:38:28,602 [INFO] 主窗口显示事件触发
+2024-11-11 22:38:28,605 [INFO] 主窗口创建成功
+2024-11-11 22:38:28,605 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:38:28,607 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:38:28,607 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:38:28,607 [INFO] Scheduler started
+2024-11-11 22:38:28,608 [DEBUG] Looking for jobs to run
+2024-11-11 22:38:28,608 [INFO] 定时任务调度器启动成功
+2024-11-11 22:38:28,608 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 66091.391771 seconds)
+2024-11-11 22:38:28,608 [INFO] 定时任务设置完成
+2024-11-11 22:38:28,640 [INFO] 开始初始化数据库连接
+2024-11-11 22:38:28,640 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 22:40:07,205 [INFO] 日志系统初始化完成
+2024-11-11 22:40:07,205 [INFO] 应用程序启动
+2024-11-11 22:40:07,218 [INFO] 开始初始化主窗口
+2024-11-11 22:40:07,219 [INFO] 设置窗口基本属性完成
+2024-11-11 22:40:07,219 [INFO] 创建中心部件完成
+2024-11-11 22:40:07,219 [INFO] 创建标签页控件完成
+2024-11-11 22:40:07,219 [INFO] 开始初始化ContractView
+2024-11-11 22:40:07,219 [INFO] 开始设置UI
+2024-11-11 22:40:07,220 [INFO] 交易所标签页创建完成
+2024-11-11 22:40:07,227 [INFO] 表格创建完成
+2024-11-11 22:40:07,227 [INFO] UI设置完成
+2024-11-11 22:40:07,228 [INFO] 添加合约信息标签页完成
+2024-11-11 22:40:07,228 [INFO] 主窗口界面初始化完成
+2024-11-11 22:40:07,288 [INFO] 主窗口显示事件触发
+2024-11-11 22:40:07,292 [INFO] 主窗口创建成功
+2024-11-11 22:40:07,292 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:40:07,294 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:40:07,294 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:40:07,294 [INFO] Scheduler started
+2024-11-11 22:40:07,294 [DEBUG] Looking for jobs to run
+2024-11-11 22:40:07,295 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65992.704171 seconds)
+2024-11-11 22:40:07,295 [INFO] 定时任务调度器启动成功
+2024-11-11 22:40:07,295 [INFO] 定时任务设置完成
+2024-11-11 22:40:07,327 [INFO] 开始初始化数据库连接
+2024-11-11 22:40:07,327 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 22:41:39,356 [INFO] 日志系统初始化完成
+2024-11-11 22:41:39,356 [INFO] 应用程序启动
+2024-11-11 22:41:39,368 [INFO] 开始初始化主窗口
+2024-11-11 22:41:39,368 [INFO] 设置窗口基本属性完成
+2024-11-11 22:41:39,368 [INFO] 创建中心部件完成
+2024-11-11 22:41:39,369 [INFO] 创建标签页控件完成
+2024-11-11 22:41:39,369 [INFO] 开始初始化ContractView
+2024-11-11 22:41:39,369 [INFO] 开始设置UI
+2024-11-11 22:41:39,375 [INFO] UI设置完成
+2024-11-11 22:41:39,376 [INFO] UI设置完成
+2024-11-11 22:41:39,376 [INFO] 添加合约信息标签页完成
+2024-11-11 22:41:39,376 [INFO] 主窗口界面初始化完成
+2024-11-11 22:41:39,435 [INFO] 主窗口显示事件触发
+2024-11-11 22:41:39,438 [INFO] 主窗口创建成功
+2024-11-11 22:41:39,438 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:41:39,439 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:41:39,440 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:41:39,440 [INFO] Scheduler started
+2024-11-11 22:41:39,440 [DEBUG] Looking for jobs to run
+2024-11-11 22:41:39,440 [INFO] 定时任务调度器启动成功
+2024-11-11 22:41:39,441 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65900.558989 seconds)
+2024-11-11 22:41:39,441 [INFO] 定时任务设置完成
+2024-11-11 22:43:50,054 [INFO] 日志系统初始化完成
+2024-11-11 22:43:50,054 [INFO] 应用程序启动
+2024-11-11 22:43:50,066 [INFO] 开始初始化主窗口
+2024-11-11 22:43:50,066 [INFO] 设置窗口基本属性完成
+2024-11-11 22:43:50,066 [INFO] 创建中心部件完成
+2024-11-11 22:43:50,067 [INFO] 创建标签页控件完成
+2024-11-11 22:43:50,067 [INFO] 开始初始化ContractView
+2024-11-11 22:43:50,067 [INFO] 开始设置UI
+2024-11-11 22:43:50,073 [INFO] UI设置完成
+2024-11-11 22:43:50,074 [INFO] UI设置完成
+2024-11-11 22:43:50,074 [INFO] 添加合约信息标签页完成
+2024-11-11 22:43:50,074 [INFO] 主窗口界面初始化完成
+2024-11-11 22:43:50,134 [INFO] 主窗口显示事件触发
+2024-11-11 22:43:50,136 [INFO] 主窗口创建成功
+2024-11-11 22:43:50,137 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:43:50,138 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:43:50,139 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:43:50,139 [INFO] Scheduler started
+2024-11-11 22:43:50,139 [DEBUG] Looking for jobs to run
+2024-11-11 22:43:50,139 [INFO] 定时任务调度器启动成功
+2024-11-11 22:43:50,139 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65769.860693 seconds)
+2024-11-11 22:43:50,139 [INFO] 定时任务设置完成
+2024-11-11 22:43:54,765 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 22:54:34,175 [INFO] 日志系统初始化完成
+2024-11-11 22:54:34,175 [INFO] 应用程序启动
+2024-11-11 22:54:34,187 [INFO] 开始初始化主窗口
+2024-11-11 22:54:34,187 [INFO] 设置窗口基本属性完成
+2024-11-11 22:54:34,187 [INFO] 创建中心部件完成
+2024-11-11 22:54:34,188 [INFO] 创建标签页控件完成
+2024-11-11 22:54:34,188 [INFO] 开始初始化ContractView
+2024-11-11 22:54:34,188 [INFO] 开始设置UI
+2024-11-11 22:54:34,195 [INFO] UI设置完成
+2024-11-11 22:54:34,195 [INFO] UI设置完成
+2024-11-11 22:54:34,195 [INFO] 添加合约信息标签页完成
+2024-11-11 22:54:34,195 [INFO] 主窗口界面初始化完成
+2024-11-11 22:54:34,255 [INFO] 主窗口显示事件触发
+2024-11-11 22:54:34,258 [INFO] 主窗口创建成功
+2024-11-11 22:54:34,258 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:54:34,260 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:54:34,260 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:54:34,260 [INFO] Scheduler started
+2024-11-11 22:54:34,261 [DEBUG] Looking for jobs to run
+2024-11-11 22:54:34,261 [INFO] 定时任务调度器启动成功
+2024-11-11 22:54:34,261 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65125.738433 seconds)
+2024-11-11 22:54:34,261 [INFO] 定时任务设置完成
+2024-11-11 22:54:45,686 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 22:54:55,694 [ERROR] 数据库连接错误 (尝试 1): 2003 (HY000): Can't connect to MySQL server on '10.17.31.47:3306' (10060)
+2024-11-11 22:54:56,694 [INFO] 尝试连接数据库 (尝试 2/3)
+2024-11-11 22:55:06,696 [ERROR] 数据库连接错误 (尝试 2): 2003 (HY000): Can't connect to MySQL server on '10.17.31.47:3306' (10060)
+2024-11-11 22:55:07,697 [INFO] 尝试连接数据库 (尝试 3/3)
+2024-11-11 22:55:14,267 [INFO] 日志系统初始化完成
+2024-11-11 22:55:14,267 [INFO] 应用程序启动
+2024-11-11 22:55:14,280 [INFO] 开始初始化主窗口
+2024-11-11 22:55:14,280 [INFO] 设置窗口基本属性完成
+2024-11-11 22:55:14,280 [INFO] 创建中心部件完成
+2024-11-11 22:55:14,280 [INFO] 创建标签页控件完成
+2024-11-11 22:55:14,281 [INFO] 开始初始化ContractView
+2024-11-11 22:55:14,281 [INFO] 开始设置UI
+2024-11-11 22:55:14,288 [INFO] UI设置完成
+2024-11-11 22:55:14,288 [INFO] UI设置完成
+2024-11-11 22:55:14,289 [INFO] 添加合约信息标签页完成
+2024-11-11 22:55:14,289 [INFO] 主窗口界面初始化完成
+2024-11-11 22:55:14,352 [INFO] 主窗口显示事件触发
+2024-11-11 22:55:14,355 [INFO] 主窗口创建成功
+2024-11-11 22:55:14,355 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:55:14,357 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:55:14,358 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:55:14,358 [INFO] Scheduler started
+2024-11-11 22:55:14,358 [DEBUG] Looking for jobs to run
+2024-11-11 22:55:14,358 [INFO] 定时任务调度器启动成功
+2024-11-11 22:55:14,358 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65085.641806 seconds)
+2024-11-11 22:55:14,358 [INFO] 定时任务设置完成
+2024-11-11 22:55:16,758 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 22:56:19,724 [INFO] 日志系统初始化完成
+2024-11-11 22:56:19,724 [INFO] 应用程序启动
+2024-11-11 22:56:19,737 [INFO] 开始初始化主窗口
+2024-11-11 22:56:19,737 [INFO] 设置窗口基本属性完成
+2024-11-11 22:56:19,737 [INFO] 创建中心部件完成
+2024-11-11 22:56:19,738 [INFO] 创建标签页控件完成
+2024-11-11 22:56:19,738 [INFO] 开始初始化ContractView
+2024-11-11 22:56:19,738 [INFO] 开始设置UI
+2024-11-11 22:56:19,744 [INFO] UI设置完成
+2024-11-11 22:56:19,744 [INFO] UI设置完成
+2024-11-11 22:56:19,745 [INFO] 添加合约信息标签页完成
+2024-11-11 22:56:19,745 [INFO] 主窗口界面初始化完成
+2024-11-11 22:56:19,805 [INFO] 主窗口显示事件触发
+2024-11-11 22:56:19,807 [INFO] 主窗口创建成功
+2024-11-11 22:56:19,807 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:56:19,809 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:56:19,810 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:56:19,810 [INFO] Scheduler started
+2024-11-11 22:56:19,810 [DEBUG] Looking for jobs to run
+2024-11-11 22:56:19,810 [INFO] 定时任务调度器启动成功
+2024-11-11 22:56:19,810 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 65020.189215 seconds)
+2024-11-11 22:56:19,810 [INFO] 定时任务设置完成
+2024-11-11 22:56:22,272 [ERROR] 测试连接过程发生错误: name 'QApplication' is not defined
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\db_config_dialog.py", line 137, in safe_test_connection
+    QApplication.setOverrideCursor(QCursor(Qt.CursorShape.WaitCursor))
+NameError: name 'QApplication' is not defined
+
+2024-11-11 22:57:05,802 [INFO] 日志系统初始化完成
+2024-11-11 22:57:05,803 [INFO] 应用程序启动
+2024-11-11 22:57:05,815 [INFO] 开始初始化主窗口
+2024-11-11 22:57:05,815 [INFO] 设置窗口基本属性完成
+2024-11-11 22:57:05,815 [INFO] 创建中心部件完成
+2024-11-11 22:57:05,816 [INFO] 创建标签页控件完成
+2024-11-11 22:57:05,816 [INFO] 开始初始化ContractView
+2024-11-11 22:57:05,816 [INFO] 开始设置UI
+2024-11-11 22:57:05,823 [INFO] UI设置完成
+2024-11-11 22:57:05,823 [INFO] UI设置完成
+2024-11-11 22:57:05,824 [INFO] 添加合约信息标签页完成
+2024-11-11 22:57:05,824 [INFO] 主窗口界面初始化完成
+2024-11-11 22:57:05,884 [INFO] 主窗口显示事件触发
+2024-11-11 22:57:05,887 [INFO] 主窗口创建成功
+2024-11-11 22:57:05,887 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:57:05,889 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:57:05,890 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:57:05,890 [INFO] Scheduler started
+2024-11-11 22:57:05,890 [DEBUG] Looking for jobs to run
+2024-11-11 22:57:05,890 [INFO] 定时任务调度器启动成功
+2024-11-11 22:57:05,890 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64974.109360 seconds)
+2024-11-11 22:57:05,890 [INFO] 定时任务设置完成
+2024-11-11 22:58:06,968 [INFO] 日志系统初始化完成
+2024-11-11 22:58:06,968 [INFO] 应用程序启动
+2024-11-11 22:58:06,981 [INFO] 开始初始化主窗口
+2024-11-11 22:58:06,981 [INFO] 设置窗口基本属性完成
+2024-11-11 22:58:06,981 [INFO] 创建中心部件完成
+2024-11-11 22:58:06,982 [INFO] 创建标签页控件完成
+2024-11-11 22:58:06,982 [INFO] 开始初始化ContractView
+2024-11-11 22:58:06,982 [INFO] 开始设置UI
+2024-11-11 22:58:06,990 [INFO] UI设置完成
+2024-11-11 22:58:06,990 [INFO] UI设置完成
+2024-11-11 22:58:06,990 [INFO] 添加合约信息标签页完成
+2024-11-11 22:58:06,990 [INFO] 主窗口界面初始化完成
+2024-11-11 22:58:07,050 [INFO] 主窗口显示事件触发
+2024-11-11 22:58:07,053 [INFO] 主窗口创建成功
+2024-11-11 22:58:07,053 [DEBUG] Looking up time zone info from registry
+2024-11-11 22:58:07,055 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 22:58:07,055 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 22:58:07,056 [INFO] Scheduler started
+2024-11-11 22:58:07,056 [DEBUG] Looking for jobs to run
+2024-11-11 22:58:07,056 [INFO] 定时任务调度器启动成功
+2024-11-11 22:58:07,056 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64912.943802 seconds)
+2024-11-11 22:58:07,056 [INFO] 定时任务设置完成
+2024-11-11 22:58:22,046 [DEBUG] Starting authorization phase
+2024-11-11 22:58:22,047 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 22:58:22,047 [INFO] package: mysql.connector.plugins
+2024-11-11 22:58:22,047 [INFO] plugin_name: mysql_native_password
+2024-11-11 22:58:22,047 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 22:58:22,075 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 22:58:24,727 [DEBUG] Starting authorization phase
+2024-11-11 22:58:24,727 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 22:58:24,757 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:00:00,012 [INFO] 日志系统初始化完成
+2024-11-11 23:00:00,012 [INFO] 应用程序启动
+2024-11-11 23:00:00,026 [INFO] 开始初始化主窗口
+2024-11-11 23:00:00,026 [INFO] 设置窗口基本属性完成
+2024-11-11 23:00:00,026 [INFO] 创建中心部件完成
+2024-11-11 23:00:00,027 [INFO] 创建标签页控件完成
+2024-11-11 23:00:00,027 [INFO] 开始初始化ContractView
+2024-11-11 23:00:00,027 [INFO] 开始设置UI
+2024-11-11 23:00:00,036 [INFO] UI设置完成
+2024-11-11 23:00:00,036 [INFO] UI设置完成
+2024-11-11 23:00:00,036 [INFO] 添加合约信息标签页完成
+2024-11-11 23:00:00,036 [INFO] 主窗口界面初始化完成
+2024-11-11 23:00:00,096 [INFO] 主窗口显示事件触发
+2024-11-11 23:00:00,099 [INFO] 主窗口创建成功
+2024-11-11 23:00:00,100 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:00:00,102 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:00:00,102 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:00:00,102 [INFO] Scheduler started
+2024-11-11 23:00:00,103 [DEBUG] Looking for jobs to run
+2024-11-11 23:00:00,103 [INFO] 定时任务调度器启动成功
+2024-11-11 23:00:00,103 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64799.896025 seconds)
+2024-11-11 23:00:00,103 [INFO] 定时任务设置完成
+2024-11-11 23:00:03,357 [INFO] 取消数据库配置
+2024-11-11 23:00:05,650 [DEBUG] Starting authorization phase
+2024-11-11 23:00:05,650 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:00:05,650 [INFO] package: mysql.connector.plugins
+2024-11-11 23:00:05,650 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:00:05,651 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:00:05,676 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:00:05,789 [ERROR] 更新数据库配置失败: name 'Config' is not defined
+2024-11-11 23:00:10,349 [INFO] 接受数据库配置
+2024-11-11 23:00:19,694 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:02:16,865 [INFO] 日志系统初始化完成
+2024-11-11 23:02:16,865 [INFO] 应用程序启动
+2024-11-11 23:02:16,877 [INFO] 开始初始化主窗口
+2024-11-11 23:02:16,877 [INFO] 设置窗口基本属性完成
+2024-11-11 23:02:16,877 [INFO] 创建中心部件完成
+2024-11-11 23:02:16,878 [INFO] 创建标签页控件完成
+2024-11-11 23:02:16,878 [INFO] 开始初始化ContractView
+2024-11-11 23:02:16,878 [INFO] 开始设置UI
+2024-11-11 23:02:16,884 [INFO] UI设置完成
+2024-11-11 23:02:16,884 [INFO] UI设置完成
+2024-11-11 23:02:16,885 [INFO] 添加合约信息标签页完成
+2024-11-11 23:02:16,885 [INFO] 主窗口界面初始化完成
+2024-11-11 23:02:16,945 [INFO] 主窗口显示事件触发
+2024-11-11 23:02:16,948 [INFO] 主窗口创建成功
+2024-11-11 23:02:16,948 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:02:16,950 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:02:16,950 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:02:16,950 [INFO] Scheduler started
+2024-11-11 23:02:16,951 [DEBUG] Looking for jobs to run
+2024-11-11 23:02:16,951 [INFO] 定时任务调度器启动成功
+2024-11-11 23:02:16,951 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64663.048508 seconds)
+2024-11-11 23:02:16,951 [INFO] 定时任务设置完成
+2024-11-11 23:02:18,911 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:03:59,997 [INFO] 日志系统初始化完成
+2024-11-11 23:03:59,997 [INFO] 应用程序启动
+2024-11-11 23:04:00,012 [INFO] 开始初始化主窗口
+2024-11-11 23:04:00,012 [INFO] 设置窗口基本属性完成
+2024-11-11 23:04:00,012 [INFO] 创建中心部件完成
+2024-11-11 23:04:00,012 [INFO] 创建标签页控件完成
+2024-11-11 23:04:00,012 [INFO] 开始初始化ContractView
+2024-11-11 23:04:00,012 [INFO] 开始设置UI
+2024-11-11 23:04:00,021 [INFO] UI设置完成
+2024-11-11 23:04:00,021 [INFO] UI设置完成
+2024-11-11 23:04:00,022 [INFO] 添加合约信息标签页完成
+2024-11-11 23:04:00,022 [INFO] 主窗口界面初始化完成
+2024-11-11 23:04:00,081 [INFO] 主窗口显示事件触发
+2024-11-11 23:04:00,083 [INFO] 主窗口创建成功
+2024-11-11 23:04:00,084 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:04:00,086 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:04:00,086 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:04:00,086 [INFO] Scheduler started
+2024-11-11 23:04:00,087 [DEBUG] Looking for jobs to run
+2024-11-11 23:04:00,087 [INFO] 定时任务调度器启动成功
+2024-11-11 23:04:00,087 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64559.912358 seconds)
+2024-11-11 23:04:00,087 [INFO] 定时任务设置完成
+2024-11-11 23:04:03,598 [DEBUG] Starting authorization phase
+2024-11-11 23:04:03,599 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:04:03,599 [INFO] package: mysql.connector.plugins
+2024-11-11 23:04:03,599 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:04:03,601 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:04:03,626 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:04:05,365 [DEBUG] Starting authorization phase
+2024-11-11 23:04:05,365 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:04:05,389 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:04:05,486 [INFO] 数据库配置更新成功
+2024-11-11 23:04:06,450 [INFO] 接受数据库配置
+2024-11-11 23:04:08,462 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:04:08,520 [DEBUG] Starting authorization phase
+2024-11-11 23:04:08,521 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:04:08,548 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:04:08,660 [INFO] 数据库连接成功
+2024-11-11 23:04:08,769 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:04:08,880 [INFO] 获取到8个期货品种
+2024-11-11 23:04:08,881 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:04:08,938 [INFO] 获取到26个期货品种
+2024-11-11 23:04:08,940 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:04:09,003 [INFO] 获取到21个期货品种
+2024-11-11 23:04:09,007 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:04:09,067 [INFO] 获取到2个期货品种
+2024-11-11 23:04:09,070 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:04:09,127 [INFO] 获取到6个期货品种
+2024-11-11 23:04:09,128 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:04:09,181 [INFO] 获取到18个期货品种
+2024-11-11 23:07:16,213 [INFO] 主窗口关闭事件触发
+2024-11-11 23:07:22,697 [INFO] 日志系统初始化完成
+2024-11-11 23:07:22,697 [INFO] 应用程序启动
+2024-11-11 23:07:22,710 [INFO] 开始初始化主窗口
+2024-11-11 23:07:22,710 [INFO] 设置窗口基本属性完成
+2024-11-11 23:07:22,710 [INFO] 创建中心部件完成
+2024-11-11 23:07:22,711 [INFO] 创建标签页控件完成
+2024-11-11 23:07:22,711 [INFO] 开始初始化ContractView
+2024-11-11 23:07:22,711 [INFO] 开始设置UI
+2024-11-11 23:07:22,721 [ERROR] UI设置失败: name 'QHeaderView' is not defined
+2024-11-11 23:07:25,647 [INFO] UI设置完成
+2024-11-11 23:07:25,656 [INFO] 添加合约信息标签页完成
+2024-11-11 23:07:25,656 [INFO] 主窗口界面初始化完成
+2024-11-11 23:07:25,690 [INFO] 主窗口显示事件触发
+2024-11-11 23:07:25,693 [INFO] 主窗口创建成功
+2024-11-11 23:07:25,693 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:07:25,695 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:07:25,696 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:07:25,696 [INFO] Scheduler started
+2024-11-11 23:07:25,696 [DEBUG] Looking for jobs to run
+2024-11-11 23:07:25,696 [INFO] 定时任务调度器启动成功
+2024-11-11 23:07:25,696 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64354.303409 seconds)
+2024-11-11 23:07:25,696 [INFO] 定时任务设置完成
+2024-11-11 23:07:29,734 [INFO] 主窗口关闭事件触发
+2024-11-11 23:08:00,459 [INFO] 日志系统初始化完成
+2024-11-11 23:08:00,459 [INFO] 应用程序启动
+2024-11-11 23:08:00,472 [INFO] 开始初始化主窗口
+2024-11-11 23:08:00,472 [INFO] 设置窗口基本属性完成
+2024-11-11 23:08:00,472 [INFO] 创建中心部件完成
+2024-11-11 23:08:00,472 [INFO] 创建标签页控件完成
+2024-11-11 23:08:00,472 [INFO] 开始初始化ContractView
+2024-11-11 23:08:00,472 [INFO] 开始设置UI
+2024-11-11 23:08:00,482 [INFO] UI设置完成
+2024-11-11 23:08:00,482 [INFO] UI设置完成
+2024-11-11 23:08:00,482 [INFO] 添加合约信息标签页完成
+2024-11-11 23:08:00,482 [INFO] 主窗口界面初始化完成
+2024-11-11 23:08:00,542 [INFO] 主窗口显示事件触发
+2024-11-11 23:08:00,544 [INFO] 主窗口创建成功
+2024-11-11 23:08:00,545 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:08:00,547 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:08:00,547 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:08:00,547 [INFO] Scheduler started
+2024-11-11 23:08:00,547 [DEBUG] Looking for jobs to run
+2024-11-11 23:08:00,548 [INFO] 定时任务调度器启动成功
+2024-11-11 23:08:00,548 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64319.451363 seconds)
+2024-11-11 23:08:00,548 [INFO] 定时任务设置完成
+2024-11-11 23:09:43,025 [INFO] 主窗口显示事件触发
+2024-11-11 23:09:44,478 [INFO] 主窗口关闭事件触发
+2024-11-11 23:10:05,229 [INFO] 日志系统初始化完成
+2024-11-11 23:10:05,229 [INFO] 应用程序启动
+2024-11-11 23:10:05,241 [INFO] 开始初始化主窗口
+2024-11-11 23:10:05,241 [INFO] 设置窗口基本属性完成
+2024-11-11 23:10:05,241 [INFO] 创建中心部件完成
+2024-11-11 23:10:05,242 [INFO] 创建标签页控件完成
+2024-11-11 23:10:05,242 [INFO] 开始初始化ContractView
+2024-11-11 23:10:05,242 [INFO] 开始设置UI
+2024-11-11 23:10:05,251 [INFO] UI设置完成
+2024-11-11 23:10:05,252 [INFO] UI设置完成
+2024-11-11 23:10:05,252 [INFO] 添加合约信息标签页完成
+2024-11-11 23:10:05,252 [INFO] 主窗口界面初始化完成
+2024-11-11 23:10:05,312 [INFO] 主窗口显示事件触发
+2024-11-11 23:10:05,315 [INFO] 主窗口创建成功
+2024-11-11 23:10:05,315 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:10:05,317 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:10:05,318 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:10:05,318 [INFO] Scheduler started
+2024-11-11 23:10:05,318 [DEBUG] Looking for jobs to run
+2024-11-11 23:10:05,318 [INFO] 定时任务调度器启动成功
+2024-11-11 23:10:05,319 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 64194.680746 seconds)
+2024-11-11 23:10:05,319 [INFO] 定时任务设置完成
+2024-11-11 23:10:08,917 [DEBUG] Starting authorization phase
+2024-11-11 23:10:08,917 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:10:08,917 [INFO] package: mysql.connector.plugins
+2024-11-11 23:10:08,917 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:10:08,918 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:10:08,943 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:10:11,148 [DEBUG] Starting authorization phase
+2024-11-11 23:10:11,149 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:10:11,178 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:10:11,278 [INFO] 数据库配置更新成功
+2024-11-11 23:10:12,118 [INFO] 接受数据库配置
+2024-11-11 23:10:13,319 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:10:13,375 [DEBUG] Starting authorization phase
+2024-11-11 23:10:13,376 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:10:13,405 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:10:13,524 [INFO] 数据库连接成功
+2024-11-11 23:10:13,624 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:10:13,725 [INFO] 获取到8个期货品种
+2024-11-11 23:10:13,734 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:10:13,796 [INFO] 获取到26个期货品种
+2024-11-11 23:10:13,810 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:10:13,876 [INFO] 获取到21个期货品种
+2024-11-11 23:10:13,891 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:10:13,949 [INFO] 获取到2个期货品种
+2024-11-11 23:10:13,951 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:10:14,004 [INFO] 获取到6个期货品种
+2024-11-11 23:10:14,006 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:10:14,062 [INFO] 获取到18个期货品种
+2024-11-11 23:14:30,829 [INFO] 主窗口关闭事件触发
+2024-11-11 23:27:33,422 [INFO] 日志系统初始化完成
+2024-11-11 23:27:33,422 [INFO] 应用程序启动
+2024-11-11 23:27:33,438 [INFO] 开始初始化主窗口
+2024-11-11 23:27:33,438 [INFO] 设置窗口基本属性完成
+2024-11-11 23:27:33,438 [INFO] 创建中心部件完成
+2024-11-11 23:27:33,439 [INFO] 创建标签页控件完成
+2024-11-11 23:27:33,439 [INFO] 开始初始化ContractView
+2024-11-11 23:27:33,439 [INFO] 开始设置UI
+2024-11-11 23:27:33,450 [INFO] UI设置完成
+2024-11-11 23:27:33,450 [INFO] UI设置完成
+2024-11-11 23:27:33,451 [INFO] 添加合约信息标签页完成
+2024-11-11 23:27:33,451 [INFO] 主窗口界面初始化完成
+2024-11-11 23:27:33,516 [INFO] 主窗口显示事件触发
+2024-11-11 23:27:33,519 [INFO] 主窗口创建成功
+2024-11-11 23:27:33,519 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:27:33,521 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:27:33,521 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:27:33,521 [INFO] Scheduler started
+2024-11-11 23:27:33,522 [DEBUG] Looking for jobs to run
+2024-11-11 23:27:33,522 [INFO] 定时任务调度器启动成功
+2024-11-11 23:27:33,522 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 63146.477464 seconds)
+2024-11-11 23:27:33,522 [INFO] 定时任务设置完成
+2024-11-11 23:27:36,768 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:27:46,787 [ERROR] 无法连接到服务器，请检查主机地址和端口
+2024-11-11 23:27:47,801 [INFO] 尝试连接数据库 (尝试 2/3)
+2024-11-11 23:27:47,855 [DEBUG] Starting authorization phase
+2024-11-11 23:27:47,855 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:27:47,855 [INFO] package: mysql.connector.plugins
+2024-11-11 23:27:47,855 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:27:47,855 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:27:47,882 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:27:47,996 [INFO] 数据库连接成功
+2024-11-11 23:27:47,998 [ERROR] 连接数据库失败: 'ContractView' object has no attribute 'tab_widget'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 243, in connect_database
+    self.tab_widget.setEnabled(True)
+AttributeError: 'ContractView' object has no attribute 'tab_widget'
+
+2024-11-11 23:27:50,784 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:27:50,841 [DEBUG] Starting authorization phase
+2024-11-11 23:27:50,841 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:27:50,870 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:27:50,981 [INFO] 数据库连接成功
+2024-11-11 23:27:50,982 [ERROR] 连接数据库失败: 'ContractView' object has no attribute 'tab_widget'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 243, in connect_database
+    self.tab_widget.setEnabled(True)
+AttributeError: 'ContractView' object has no attribute 'tab_widget'
+
+2024-11-11 23:27:55,138 [DEBUG] Starting authorization phase
+2024-11-11 23:27:55,139 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:27:55,165 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:27:57,057 [DEBUG] Starting authorization phase
+2024-11-11 23:27:57,058 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:27:57,087 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:27:57,197 [ERROR] 更新数据库配置失败: 'ContractView' object has no attribute 'tab_widget'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 469, in update_db_config
+    self.tab_widget.setEnabled(False)
+AttributeError: 'ContractView' object has no attribute 'tab_widget'
+
+2024-11-11 23:28:00,558 [INFO] 接受数据库配置
+2024-11-11 23:28:01,719 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:28:01,763 [DEBUG] Starting authorization phase
+2024-11-11 23:28:01,763 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:28:01,785 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:28:01,872 [INFO] 数据库连接成功
+2024-11-11 23:28:01,873 [ERROR] 连接数据库失败: 'ContractView' object has no attribute 'tab_widget'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 243, in connect_database
+    self.tab_widget.setEnabled(True)
+AttributeError: 'ContractView' object has no attribute 'tab_widget'
+
+2024-11-11 23:29:05,734 [INFO] 主窗口关闭事件触发
+2024-11-11 23:29:08,890 [INFO] 日志系统初始化完成
+2024-11-11 23:29:08,890 [INFO] 应用程序启动
+2024-11-11 23:29:08,903 [INFO] 开始初始化主窗口
+2024-11-11 23:29:08,903 [INFO] 设置窗口基本属性完成
+2024-11-11 23:29:08,903 [INFO] 创建中心部件完成
+2024-11-11 23:29:08,904 [INFO] 创建标签页控件完成
+2024-11-11 23:29:08,904 [INFO] 开始初始化ContractView
+2024-11-11 23:29:08,904 [INFO] 开始设置UI
+2024-11-11 23:29:08,913 [INFO] UI设置完成
+2024-11-11 23:29:08,913 [INFO] UI设置完成
+2024-11-11 23:29:08,914 [INFO] 添加合约信息标签页完成
+2024-11-11 23:29:08,914 [INFO] 主窗口界面初始化完成
+2024-11-11 23:29:08,976 [INFO] 主窗口显示事件触发
+2024-11-11 23:29:08,980 [INFO] 主窗口创建成功
+2024-11-11 23:29:08,980 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:29:08,982 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:29:08,982 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:29:08,982 [INFO] Scheduler started
+2024-11-11 23:29:08,983 [DEBUG] Looking for jobs to run
+2024-11-11 23:29:08,983 [INFO] 定时任务调度器启动成功
+2024-11-11 23:29:08,983 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 63051.016692 seconds)
+2024-11-11 23:29:08,983 [INFO] 定时任务设置完成
+2024-11-11 23:29:11,096 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:29:11,164 [DEBUG] Starting authorization phase
+2024-11-11 23:29:11,164 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:29:11,165 [INFO] package: mysql.connector.plugins
+2024-11-11 23:29:11,165 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:29:11,168 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:29:11,193 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:29:11,296 [INFO] 数据库连接成功
+2024-11-11 23:29:11,386 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:29:11,489 [INFO] 获取到8个期货品种
+2024-11-11 23:29:11,496 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:29:11,555 [INFO] 获取到26个期货品种
+2024-11-11 23:29:11,570 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:29:11,629 [INFO] 获取到21个期货品种
+2024-11-11 23:29:11,640 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:29:11,697 [INFO] 获取到2个期货品种
+2024-11-11 23:29:11,703 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:29:11,762 [INFO] 获取到6个期货品种
+2024-11-11 23:29:11,767 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:29:11,831 [INFO] 获取到18个期货品种
+2024-11-11 23:30:09,430 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,430 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,430 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,430 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,431 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,431 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,431 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,431 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,432 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:09,432 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,210 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,211 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,211 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,211 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,211 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,211 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,212 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,212 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,212 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,212 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,212 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:11,213 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,367 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,367 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,367 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,368 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,368 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,368 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,368 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,369 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,369 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,369 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,370 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:13,370 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:30:16,518 [INFO] 主窗口关闭事件触发
+2024-11-11 23:30:54,337 [INFO] 日志系统初始化完成
+2024-11-11 23:30:54,338 [INFO] 应用程序启动
+2024-11-11 23:30:54,350 [INFO] 开始初始化主窗口
+2024-11-11 23:30:54,350 [INFO] 设置窗口基本属性完成
+2024-11-11 23:30:54,350 [INFO] 创建中心部件完成
+2024-11-11 23:30:54,350 [INFO] 创建标签页控件完成
+2024-11-11 23:30:54,350 [INFO] 开始初始化ContractView
+2024-11-11 23:30:54,350 [INFO] 开始设置UI
+2024-11-11 23:30:54,360 [INFO] UI设置完成
+2024-11-11 23:30:54,360 [INFO] UI设置完成
+2024-11-11 23:30:54,361 [INFO] 添加合约信息标签页完成
+2024-11-11 23:30:54,361 [INFO] 主窗口界面初始化完成
+2024-11-11 23:30:54,418 [INFO] 主窗口显示事件触发
+2024-11-11 23:30:54,421 [INFO] 主窗口创建成功
+2024-11-11 23:30:54,422 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:30:54,423 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:30:54,424 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:30:54,424 [INFO] Scheduler started
+2024-11-11 23:30:54,424 [DEBUG] Looking for jobs to run
+2024-11-11 23:30:54,424 [INFO] 定时任务调度器启动成功
+2024-11-11 23:30:54,424 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62945.575782 seconds)
+2024-11-11 23:30:54,425 [INFO] 定时任务设置完成
+2024-11-11 23:30:57,702 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:30:57,766 [DEBUG] Starting authorization phase
+2024-11-11 23:30:57,767 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:30:57,767 [INFO] package: mysql.connector.plugins
+2024-11-11 23:30:57,767 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:30:57,770 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:30:57,796 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:30:57,894 [INFO] 数据库连接成功
+2024-11-11 23:30:57,974 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:30:58,063 [INFO] 获取到8个期货品种
+2024-11-11 23:30:58,068 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:30:58,121 [INFO] 获取到26个期货品种
+2024-11-11 23:30:58,139 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:30:58,195 [INFO] 获取到21个期货品种
+2024-11-11 23:30:58,206 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:30:58,258 [INFO] 获取到2个期货品种
+2024-11-11 23:30:58,261 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:30:58,314 [INFO] 获取到6个期货品种
+2024-11-11 23:30:58,318 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:30:58,379 [INFO] 获取到18个期货品种
+2024-11-11 23:31:16,229 [INFO] 主窗口关闭事件触发
+2024-11-11 23:32:48,897 [INFO] 日志系统初始化完成
+2024-11-11 23:32:48,897 [INFO] 应用程序启动
+2024-11-11 23:32:48,910 [INFO] 开始初始化主窗口
+2024-11-11 23:32:48,910 [INFO] 设置窗口基本属性完成
+2024-11-11 23:32:48,910 [INFO] 创建中心部件完成
+2024-11-11 23:32:48,910 [INFO] 创建标签页控件完成
+2024-11-11 23:32:48,910 [INFO] 开始初始化ContractView
+2024-11-11 23:32:48,911 [INFO] 开始设置UI
+2024-11-11 23:32:48,920 [INFO] UI设置完成
+2024-11-11 23:32:48,920 [INFO] UI设置完成
+2024-11-11 23:32:48,920 [INFO] 添加合约信息标签页完成
+2024-11-11 23:32:48,921 [INFO] 主窗口界面初始化完成
+2024-11-11 23:32:48,980 [INFO] 主窗口显示事件触发
+2024-11-11 23:32:48,982 [INFO] 主窗口创建成功
+2024-11-11 23:32:48,982 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:32:48,984 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:32:48,985 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:32:48,985 [INFO] Scheduler started
+2024-11-11 23:32:48,985 [DEBUG] Looking for jobs to run
+2024-11-11 23:32:48,985 [INFO] 定时任务调度器启动成功
+2024-11-11 23:32:48,985 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62831.014086 seconds)
+2024-11-11 23:32:48,985 [INFO] 定时任务设置完成
+2024-11-11 23:32:50,511 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:32:50,571 [DEBUG] Starting authorization phase
+2024-11-11 23:32:50,572 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:32:50,572 [INFO] package: mysql.connector.plugins
+2024-11-11 23:32:50,573 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:32:50,575 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:32:50,597 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:32:50,690 [INFO] 数据库连接成功
+2024-11-11 23:32:50,774 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:32:50,875 [INFO] 获取到8个期货品种
+2024-11-11 23:32:50,881 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:32:50,933 [INFO] 获取到26个期货品种
+2024-11-11 23:32:50,950 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:32:51,002 [INFO] 获取到21个期货品种
+2024-11-11 23:32:51,016 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:32:51,068 [INFO] 获取到2个期货品种
+2024-11-11 23:32:51,072 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:32:51,130 [INFO] 获取到6个期货品种
+2024-11-11 23:32:51,139 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:32:51,200 [INFO] 获取到18个期货品种
+2024-11-11 23:32:59,553 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,553 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,553 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,553 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,554 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,554 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,554 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,554 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,554 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,555 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,555 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:32:59,555 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:20,731 [INFO] 日志系统初始化完成
+2024-11-11 23:34:20,731 [INFO] 应用程序启动
+2024-11-11 23:34:20,743 [INFO] 开始初始化主窗口
+2024-11-11 23:34:20,743 [INFO] 设置窗口基本属性完成
+2024-11-11 23:34:20,743 [INFO] 创建中心部件完成
+2024-11-11 23:34:20,744 [INFO] 创建标签页控件完成
+2024-11-11 23:34:20,744 [INFO] 开始初始化ContractView
+2024-11-11 23:34:20,744 [INFO] 开始设置UI
+2024-11-11 23:34:20,753 [INFO] UI设置完成
+2024-11-11 23:34:20,753 [INFO] UI设置完成
+2024-11-11 23:34:20,754 [INFO] 添加合约信息标签页完成
+2024-11-11 23:34:20,754 [INFO] 主窗口界面初始化完成
+2024-11-11 23:34:20,812 [INFO] 主窗口显示事件触发
+2024-11-11 23:34:20,815 [INFO] 主窗口创建成功
+2024-11-11 23:34:20,816 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:34:20,818 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:34:20,818 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:34:20,818 [INFO] Scheduler started
+2024-11-11 23:34:20,819 [DEBUG] Looking for jobs to run
+2024-11-11 23:34:20,819 [INFO] 定时任务调度器启动成功
+2024-11-11 23:34:20,819 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62739.180734 seconds)
+2024-11-11 23:34:20,819 [INFO] 定时任务设置完成
+2024-11-11 23:34:22,822 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:34:22,884 [DEBUG] Starting authorization phase
+2024-11-11 23:34:22,885 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:34:22,885 [INFO] package: mysql.connector.plugins
+2024-11-11 23:34:22,886 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:34:22,888 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:34:22,917 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:34:23,024 [INFO] 数据库连接成功
+2024-11-11 23:34:23,114 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:34:23,216 [INFO] 获取到8个期货品种
+2024-11-11 23:34:23,219 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:34:23,275 [INFO] 获取到26个期货品种
+2024-11-11 23:34:23,281 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:34:23,334 [INFO] 获取到21个期货品种
+2024-11-11 23:34:23,339 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:34:23,388 [INFO] 获取到2个期货品种
+2024-11-11 23:34:23,390 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:34:23,440 [INFO] 获取到6个期货品种
+2024-11-11 23:34:23,445 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:34:23,502 [INFO] 获取到18个期货品种
+2024-11-11 23:34:31,415 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:31,416 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:31,416 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:31,416 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:34,712 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:44,068 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:46,015 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:46,825 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:48,162 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:48,163 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:48,163 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:48,163 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:49,371 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:49,881 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:50,312 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:52,253 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,253 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,254 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,254 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,255 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,255 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,255 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,255 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,255 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,256 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,256 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:52,256 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:34:53,063 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:53,598 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:54,929 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:55,512 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:34:56,071 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:01,287 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:02,821 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:03,484 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:03,866 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:06,127 [INFO] Tushare API 初始化成功
+2024-11-11 23:35:06,128 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:35:06,180 [DEBUG] Starting authorization phase
+2024-11-11 23:35:06,180 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:35:06,206 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:35:06,309 [INFO] 数据库连接成功
+2024-11-11 23:35:06,408 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-11 23:35:06,546 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_daily HTTP/11" 307 0
+2024-11-11 23:35:06,622 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_daily/ HTTP/11" 200 83
+2024-11-11 23:35:06,623 [ERROR] 获取期货日线数据失败: 您的token不对，请确认。
+2024-11-11 23:35:06,623 [ERROR] 更新合约B2506.DCE行情数据失败: 获取行情数据失败
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:39,647 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:35:42,034 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:43,640 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:46,860 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:35:48,393 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:37:11,814 [INFO] 主窗口关闭事件触发
+2024-11-11 23:38:10,571 [INFO] 日志系统初始化完成
+2024-11-11 23:38:10,571 [INFO] 应用程序启动
+2024-11-11 23:38:10,582 [INFO] 开始初始化主窗口
+2024-11-11 23:38:10,582 [INFO] 设置窗口基本属性完成
+2024-11-11 23:38:10,582 [INFO] 创建中心部件完成
+2024-11-11 23:38:10,583 [INFO] 创建标签页控件完成
+2024-11-11 23:38:10,583 [INFO] 开始初始化ContractView
+2024-11-11 23:38:10,583 [INFO] 开始设置UI
+2024-11-11 23:38:10,592 [INFO] UI设置完成
+2024-11-11 23:38:10,592 [INFO] UI设置完成
+2024-11-11 23:38:10,593 [INFO] 添加合约信息标签页完成
+2024-11-11 23:38:10,593 [INFO] 主窗口界面初始化完成
+2024-11-11 23:38:10,652 [INFO] 主窗口显示事件触发
+2024-11-11 23:38:10,655 [INFO] 主窗口创建成功
+2024-11-11 23:38:10,656 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:38:10,658 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:38:10,658 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:38:10,658 [INFO] Scheduler started
+2024-11-11 23:38:10,659 [DEBUG] Looking for jobs to run
+2024-11-11 23:38:10,659 [INFO] 定时任务调度器启动成功
+2024-11-11 23:38:10,659 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62509.340909 seconds)
+2024-11-11 23:38:10,659 [INFO] 定时任务设置完成
+2024-11-11 23:38:12,312 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:38:12,359 [DEBUG] Starting authorization phase
+2024-11-11 23:38:12,360 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:38:12,360 [INFO] package: mysql.connector.plugins
+2024-11-11 23:38:12,360 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:38:12,362 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:38:12,379 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:38:12,452 [INFO] 数据库连接成功
+2024-11-11 23:38:12,523 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:38:12,596 [INFO] 获取到8个期货品种
+2024-11-11 23:38:12,600 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:38:12,638 [INFO] 获取到26个期货品种
+2024-11-11 23:38:12,647 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:38:12,686 [INFO] 获取到21个期货品种
+2024-11-11 23:38:12,695 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:38:12,729 [INFO] 获取到2个期货品种
+2024-11-11 23:38:12,732 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:38:12,769 [INFO] 获取到6个期货品种
+2024-11-11 23:38:12,771 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:38:12,814 [INFO] 获取到18个期货品种
+2024-11-11 23:38:15,364 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:38:15,365 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:38:15,365 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:38:15,365 [ERROR] 判断主力合约失败: name 'data' is not defined
+2024-11-11 23:38:16,758 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:38:17,887 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:38:18,479 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:38:19,661 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:40:21,262 [INFO] 主窗口关闭事件触发
+2024-11-11 23:40:24,417 [INFO] 日志系统初始化完成
+2024-11-11 23:40:24,417 [INFO] 应用程序启动
+2024-11-11 23:40:24,430 [INFO] 开始初始化主窗口
+2024-11-11 23:40:24,430 [INFO] 设置窗口基本属性完成
+2024-11-11 23:40:24,430 [INFO] 创建中心部件完成
+2024-11-11 23:40:24,431 [INFO] 创建标签页控件完成
+2024-11-11 23:40:24,431 [INFO] 开始初始化ContractView
+2024-11-11 23:40:24,431 [INFO] 开始设置UI
+2024-11-11 23:40:24,441 [INFO] UI设置完成
+2024-11-11 23:40:24,441 [INFO] UI设置完成
+2024-11-11 23:40:24,442 [INFO] 添加合约信息标签页完成
+2024-11-11 23:40:24,442 [INFO] 主窗口界面初始化完成
+2024-11-11 23:40:24,500 [INFO] 主窗口显示事件触发
+2024-11-11 23:40:24,504 [INFO] 主窗口创建成功
+2024-11-11 23:40:24,504 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:40:24,506 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:40:24,507 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:40:24,507 [INFO] Scheduler started
+2024-11-11 23:40:24,507 [DEBUG] Looking for jobs to run
+2024-11-11 23:40:24,507 [INFO] 定时任务调度器启动成功
+2024-11-11 23:40:24,507 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62375.492632 seconds)
+2024-11-11 23:40:24,507 [INFO] 定时任务设置完成
+2024-11-11 23:40:27,679 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:40:27,714 [DEBUG] Starting authorization phase
+2024-11-11 23:40:27,715 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:40:27,715 [INFO] package: mysql.connector.plugins
+2024-11-11 23:40:27,715 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:40:27,717 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:40:27,728 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:40:27,773 [INFO] 数据库连接成功
+2024-11-11 23:40:27,823 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:40:27,870 [INFO] 获取到8个期货品种
+2024-11-11 23:40:27,880 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:40:27,907 [INFO] 获取到26个期货品种
+2024-11-11 23:40:27,913 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:40:27,940 [INFO] 获取到21个期货品种
+2024-11-11 23:40:27,945 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:40:27,968 [INFO] 获取到2个期货品种
+2024-11-11 23:40:27,969 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:40:27,992 [INFO] 获取到6个期货品种
+2024-11-11 23:40:27,994 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:40:28,022 [INFO] 获取到18个期货品种
+2024-11-11 23:40:29,070 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:40:31,679 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:42:43,991 [INFO] 主窗口关闭事件触发
+2024-11-11 23:42:46,825 [INFO] 日志系统初始化完成
+2024-11-11 23:42:46,825 [INFO] 应用程序启动
+2024-11-11 23:42:46,837 [INFO] 开始初始化主窗口
+2024-11-11 23:42:46,837 [INFO] 设置窗口基本属性完成
+2024-11-11 23:42:46,837 [INFO] 创建中心部件完成
+2024-11-11 23:42:46,837 [INFO] 创建标签页控件完成
+2024-11-11 23:42:46,838 [INFO] 开始初始化ContractView
+2024-11-11 23:42:46,838 [INFO] 开始设置UI
+2024-11-11 23:42:46,847 [INFO] UI设置完成
+2024-11-11 23:42:46,847 [INFO] UI设置完成
+2024-11-11 23:42:46,847 [INFO] 添加合约信息标签页完成
+2024-11-11 23:42:46,848 [INFO] 主窗口界面初始化完成
+2024-11-11 23:42:46,909 [INFO] 主窗口显示事件触发
+2024-11-11 23:42:46,912 [INFO] 主窗口创建成功
+2024-11-11 23:42:46,912 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:42:46,914 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:42:46,915 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:42:46,915 [INFO] Scheduler started
+2024-11-11 23:42:46,915 [DEBUG] Looking for jobs to run
+2024-11-11 23:42:46,915 [INFO] 定时任务调度器启动成功
+2024-11-11 23:42:46,915 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62233.084731 seconds)
+2024-11-11 23:42:46,915 [INFO] 定时任务设置完成
+2024-11-11 23:42:48,976 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:42:49,008 [DEBUG] Starting authorization phase
+2024-11-11 23:42:49,008 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:42:49,009 [INFO] package: mysql.connector.plugins
+2024-11-11 23:42:49,009 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:42:49,010 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:42:49,021 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:42:49,064 [INFO] 数据库连接成功
+2024-11-11 23:42:49,114 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:42:49,161 [INFO] 获取到8个期货品种
+2024-11-11 23:42:49,169 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:42:49,196 [INFO] 获取到26个期货品种
+2024-11-11 23:42:49,213 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:42:49,240 [INFO] 获取到21个期货品种
+2024-11-11 23:42:49,245 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:42:49,267 [INFO] 获取到2个期货品种
+2024-11-11 23:42:49,268 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:42:49,291 [INFO] 获取到6个期货品种
+2024-11-11 23:42:49,293 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:42:49,321 [INFO] 获取到18个期货品种
+2024-11-11 23:42:50,502 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:42:54,283 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+2024-11-11 23:45:16,670 [INFO] 主窗口关闭事件触发
+2024-11-11 23:45:19,954 [INFO] 日志系统初始化完成
+2024-11-11 23:45:19,954 [INFO] 应用程序启动
+2024-11-11 23:45:19,966 [INFO] 开始初始化主窗口
+2024-11-11 23:45:19,966 [INFO] 设置窗口基本属性完成
+2024-11-11 23:45:19,967 [INFO] 创建中心部件完成
+2024-11-11 23:45:19,967 [INFO] 创建标签页控件完成
+2024-11-11 23:45:19,967 [INFO] 开始初始化ContractView
+2024-11-11 23:45:19,967 [INFO] 开始设置UI
+2024-11-11 23:45:19,976 [INFO] UI设置完成
+2024-11-11 23:45:19,976 [INFO] UI设置完成
+2024-11-11 23:45:19,977 [INFO] 添加合约信息标签页完成
+2024-11-11 23:45:19,978 [INFO] 主窗口界面初始化完成
+2024-11-11 23:45:20,035 [INFO] 主窗口显示事件触发
+2024-11-11 23:45:20,038 [INFO] 主窗口创建成功
+2024-11-11 23:45:20,039 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:45:20,040 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:45:20,041 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:45:20,041 [INFO] Scheduler started
+2024-11-11 23:45:20,041 [DEBUG] Looking for jobs to run
+2024-11-11 23:45:20,041 [INFO] 定时任务调度器启动成功
+2024-11-11 23:45:20,042 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 62079.957068 seconds)
+2024-11-11 23:45:20,042 [INFO] 定时任务设置完成
+2024-11-11 23:45:21,336 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:45:21,372 [DEBUG] Starting authorization phase
+2024-11-11 23:45:21,372 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:45:21,373 [INFO] package: mysql.connector.plugins
+2024-11-11 23:45:21,373 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:45:21,375 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:45:21,386 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:45:21,433 [INFO] 数据库连接成功
+2024-11-11 23:45:21,480 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:45:21,525 [INFO] 获取到8个期货品种
+2024-11-11 23:45:21,535 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:45:21,563 [INFO] 获取到26个期货品种
+2024-11-11 23:45:21,577 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:45:21,603 [INFO] 获取到21个期货品种
+2024-11-11 23:45:21,608 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:45:21,629 [INFO] 获取到2个期货品种
+2024-11-11 23:45:21,630 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:45:21,652 [INFO] 获取到6个期货品种
+2024-11-11 23:45:21,653 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:45:21,681 [INFO] 获取到18个期货品种
+2024-11-11 23:45:22,635 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 414, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code, exchange, fut_code))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1064 (42000): Unknown error
+
+2024-11-11 23:45:22,635 [INFO] 当前主力合约: None
+2024-11-11 23:48:33,288 [INFO] 主窗口关闭事件触发
+2024-11-11 23:48:36,135 [INFO] 日志系统初始化完成
+2024-11-11 23:48:36,135 [INFO] 应用程序启动
+2024-11-11 23:48:36,147 [INFO] 开始初始化主窗口
+2024-11-11 23:48:36,147 [INFO] 设置窗口基本属性完成
+2024-11-11 23:48:36,147 [INFO] 创建中心部件完成
+2024-11-11 23:48:36,148 [INFO] 创建标签页控件完成
+2024-11-11 23:48:36,148 [INFO] 开始初始化ContractView
+2024-11-11 23:48:36,148 [INFO] 开始设置UI
+2024-11-11 23:48:36,156 [INFO] UI设置完成
+2024-11-11 23:48:36,156 [INFO] UI设置完成
+2024-11-11 23:48:36,157 [INFO] 添加合约信息标签页完成
+2024-11-11 23:48:36,157 [INFO] 主窗口界面初始化完成
+2024-11-11 23:48:36,218 [INFO] 主窗口显示事件触发
+2024-11-11 23:48:36,220 [INFO] 主窗口创建成功
+2024-11-11 23:48:36,220 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:48:36,222 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:48:36,223 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:48:36,223 [INFO] Scheduler started
+2024-11-11 23:48:36,223 [DEBUG] Looking for jobs to run
+2024-11-11 23:48:36,223 [INFO] 定时任务调度器启动成功
+2024-11-11 23:48:36,223 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 61883.776192 seconds)
+2024-11-11 23:48:36,223 [INFO] 定时任务设置完成
+2024-11-11 23:48:39,897 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:48:39,930 [DEBUG] Starting authorization phase
+2024-11-11 23:48:39,931 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:48:39,931 [INFO] package: mysql.connector.plugins
+2024-11-11 23:48:39,931 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:48:39,933 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:48:39,944 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:48:39,988 [INFO] 数据库连接成功
+2024-11-11 23:48:40,036 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:48:40,084 [INFO] 获取到8个期货品种
+2024-11-11 23:48:40,094 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:48:40,122 [INFO] 获取到26个期货品种
+2024-11-11 23:48:40,131 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:48:40,163 [INFO] 获取到21个期货品种
+2024-11-11 23:48:40,169 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:48:40,191 [INFO] 获取到2个期货品种
+2024-11-11 23:48:40,193 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:48:40,214 [INFO] 获取到6个期货品种
+2024-11-11 23:48:40,216 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:48:40,244 [INFO] 获取到18个期货品种
+2024-11-11 23:48:41,237 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 404, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1064 (42000): Unknown error
+
+2024-11-11 23:48:41,237 [INFO] 当前主力合约: None
+2024-11-11 23:48:41,918 [ERROR] 获取主力合约失败: 1064 (42000): Unknown error
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 404, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1064 (42000): Unknown error
+
+2024-11-11 23:48:41,919 [INFO] 当前主力合约: None
+2024-11-11 23:52:44,935 [INFO] 主窗口关闭事件触发
+2024-11-11 23:52:48,230 [INFO] 日志系统初始化完成
+2024-11-11 23:52:48,230 [INFO] 应用程序启动
+2024-11-11 23:52:48,243 [INFO] 开始初始化主窗口
+2024-11-11 23:52:48,243 [INFO] 设置窗口基本属性完成
+2024-11-11 23:52:48,243 [INFO] 创建中心部件完成
+2024-11-11 23:52:48,244 [INFO] 创建标签页控件完成
+2024-11-11 23:52:48,244 [INFO] 开始初始化ContractView
+2024-11-11 23:52:48,244 [INFO] 开始设置UI
+2024-11-11 23:52:48,253 [INFO] UI设置完成
+2024-11-11 23:52:48,253 [INFO] UI设置完成
+2024-11-11 23:52:48,254 [INFO] 添加合约信息标签页完成
+2024-11-11 23:52:48,254 [INFO] 主窗口界面初始化完成
+2024-11-11 23:52:48,317 [INFO] 主窗口显示事件触发
+2024-11-11 23:52:48,320 [INFO] 主窗口创建成功
+2024-11-11 23:52:48,320 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:52:48,322 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:52:48,322 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:52:48,322 [INFO] Scheduler started
+2024-11-11 23:52:48,323 [DEBUG] Looking for jobs to run
+2024-11-11 23:52:48,323 [INFO] 定时任务调度器启动成功
+2024-11-11 23:52:48,323 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 61631.676910 seconds)
+2024-11-11 23:52:48,323 [INFO] 定时任务设置完成
+2024-11-11 23:52:50,129 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:52:50,162 [DEBUG] Starting authorization phase
+2024-11-11 23:52:50,162 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:52:50,162 [INFO] package: mysql.connector.plugins
+2024-11-11 23:52:50,162 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:52:50,163 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:52:50,175 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:52:50,218 [INFO] 数据库连接成功
+2024-11-11 23:52:50,267 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:52:50,314 [INFO] 获取到8个期货品种
+2024-11-11 23:52:50,322 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:52:50,347 [INFO] 获取到26个期货品种
+2024-11-11 23:52:50,363 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:52:50,392 [INFO] 获取到21个期货品种
+2024-11-11 23:52:50,398 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:52:50,419 [INFO] 获取到2个期货品种
+2024-11-11 23:52:50,420 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:52:50,441 [INFO] 获取到6个期货品种
+2024-11-11 23:52:50,444 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:52:50,471 [INFO] 获取到18个期货品种
+2024-11-11 23:52:51,400 [ERROR] 获取主力合约失败: 1267 (HY000): Unknown error 1267
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 393, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code, latest_date))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.DatabaseError: 1267 (HY000): Unknown error 1267
+
+2024-11-11 23:52:51,401 [INFO] 当前主力合约: None
+2024-11-11 23:53:09,743 [INFO] 主窗口关闭事件触发
+2024-11-11 23:53:50,115 [INFO] 日志系统初始化完成
+2024-11-11 23:53:50,116 [INFO] 应用程序启动
+2024-11-11 23:53:50,128 [INFO] 开始初始化主窗口
+2024-11-11 23:53:50,128 [INFO] 设置窗口基本属性完成
+2024-11-11 23:53:50,128 [INFO] 创建中心部件完成
+2024-11-11 23:53:50,129 [INFO] 创建标签页控件完成
+2024-11-11 23:53:50,129 [INFO] 开始初始化ContractView
+2024-11-11 23:53:50,129 [INFO] 开始设置UI
+2024-11-11 23:53:50,137 [INFO] UI设置完成
+2024-11-11 23:53:50,137 [INFO] UI设置完成
+2024-11-11 23:53:50,138 [INFO] 添加合约信息标签页完成
+2024-11-11 23:53:50,138 [INFO] 主窗口界面初始化完成
+2024-11-11 23:53:50,198 [INFO] 主窗口显示事件触发
+2024-11-11 23:53:50,201 [INFO] 主窗口创建成功
+2024-11-11 23:53:50,201 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:53:50,203 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:53:50,203 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:53:50,203 [INFO] Scheduler started
+2024-11-11 23:53:50,204 [DEBUG] Looking for jobs to run
+2024-11-11 23:53:50,204 [INFO] 定时任务调度器启动成功
+2024-11-11 23:53:50,204 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 61569.795727 seconds)
+2024-11-11 23:53:50,204 [INFO] 定时任务设置完成
+2024-11-11 23:53:51,328 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:53:51,362 [DEBUG] Starting authorization phase
+2024-11-11 23:53:51,362 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:53:51,362 [INFO] package: mysql.connector.plugins
+2024-11-11 23:53:51,362 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:53:51,364 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:53:51,375 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:53:51,419 [INFO] 数据库连接成功
+2024-11-11 23:53:51,465 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:53:51,508 [INFO] 获取到8个期货品种
+2024-11-11 23:53:51,514 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:53:51,539 [INFO] 获取到26个期货品种
+2024-11-11 23:53:51,546 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:53:51,572 [INFO] 获取到21个期货品种
+2024-11-11 23:53:51,577 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:53:51,599 [INFO] 获取到2个期货品种
+2024-11-11 23:53:51,600 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:53:51,621 [INFO] 获取到6个期货品种
+2024-11-11 23:53:51,624 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:53:51,651 [INFO] 获取到18个期货品种
+2024-11-11 23:53:52,631 [ERROR] 获取主力合约失败: 1267 (HY000): Unknown error 1267
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 393, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code, latest_date))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.DatabaseError: 1267 (HY000): Unknown error 1267
+
+2024-11-11 23:53:52,631 [INFO] 当前主力合约: None
+2024-11-11 23:54:53,360 [INFO] 主窗口关闭事件触发
+2024-11-11 23:54:56,735 [INFO] 日志系统初始化完成
+2024-11-11 23:54:56,735 [INFO] 应用程序启动
+2024-11-11 23:54:56,748 [INFO] 开始初始化主窗口
+2024-11-11 23:54:56,748 [INFO] 设置窗口基本属性完成
+2024-11-11 23:54:56,748 [INFO] 创建中心部件完成
+2024-11-11 23:54:56,749 [INFO] 创建标签页控件完成
+2024-11-11 23:54:56,749 [INFO] 开始初始化ContractView
+2024-11-11 23:54:56,749 [INFO] 开始设置UI
+2024-11-11 23:54:56,758 [INFO] UI设置完成
+2024-11-11 23:54:56,758 [INFO] UI设置完成
+2024-11-11 23:54:56,759 [INFO] 添加合约信息标签页完成
+2024-11-11 23:54:56,759 [INFO] 主窗口界面初始化完成
+2024-11-11 23:54:56,819 [INFO] 主窗口显示事件触发
+2024-11-11 23:54:56,822 [INFO] 主窗口创建成功
+2024-11-11 23:54:56,822 [DEBUG] Looking up time zone info from registry
+2024-11-11 23:54:56,824 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-11 23:54:56,825 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-11 23:54:56,825 [INFO] Scheduler started
+2024-11-11 23:54:56,825 [DEBUG] Looking for jobs to run
+2024-11-11 23:54:56,825 [INFO] 定时任务调度器启动成功
+2024-11-11 23:54:56,825 [DEBUG] Next wakeup is due at 2024-11-12 17:00:00+08:00 (in 61503.174360 seconds)
+2024-11-11 23:54:56,825 [INFO] 定时任务设置完成
+2024-11-11 23:54:58,952 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-11 23:54:58,986 [DEBUG] Starting authorization phase
+2024-11-11 23:54:58,986 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-11 23:54:58,986 [INFO] package: mysql.connector.plugins
+2024-11-11 23:54:58,986 [INFO] plugin_name: mysql_native_password
+2024-11-11 23:54:58,987 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-11 23:54:58,998 [DEBUG] mysql_native_password completed succesfully
+2024-11-11 23:54:59,039 [INFO] 数据库连接成功
+2024-11-11 23:54:59,087 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-11 23:54:59,132 [INFO] 获取到8个期货品种
+2024-11-11 23:54:59,143 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-11 23:54:59,169 [INFO] 获取到26个期货品种
+2024-11-11 23:54:59,185 [INFO] 开始创建DCE的期货品种按钮
+2024-11-11 23:54:59,212 [INFO] 获取到21个期货品种
+2024-11-11 23:54:59,217 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-11 23:54:59,237 [INFO] 获取到2个期货品种
+2024-11-11 23:54:59,238 [INFO] 开始创建INE的期货品种按钮
+2024-11-11 23:54:59,259 [INFO] 获取到6个期货品种
+2024-11-11 23:54:59,262 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-11 23:54:59,289 [INFO] 获取到18个期货品种
+2024-11-11 23:55:00,106 [ERROR] 获取主力合约失败: 1267 (HY000): Unknown error 1267
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 377, in get_main_contracts
+    cursor.execute(query, (exchange, fut_code, latest_date))
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.DatabaseError: 1267 (HY000): Unknown error 1267
+
+2024-11-11 23:55:00,106 [INFO] 当前主力合约: None
+2024-11-11 23:55:20,093 [INFO] 主窗口显示事件触发
+2024-11-12 00:00:23,198 [ERROR] 获取主力合约失败: 1267 (HY000): Unknown error 1267
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\database\db_manager.py", line 377, in get_main_contracts
+    AND b.delist_date > CURDATE()
+  File "D:\python310\lib\site-packages\mysql\connector\cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "D:\python310\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "D:\python310\lib\site-packages\mysql\connector\connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.DatabaseError: 1267 (HY000): Unknown error 1267
+
+2024-11-12 00:00:23,198 [INFO] 当前主力合约: None
+2024-11-12 00:02:11,624 [INFO] 主窗口关闭事件触发

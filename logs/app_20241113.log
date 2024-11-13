@@ -1,0 +1,1994 @@
+2024-11-13 07:29:49,307 [INFO] 日志系统初始化完成
+2024-11-13 07:29:49,307 [INFO] 应用程序启动
+2024-11-13 07:29:49,319 [INFO] 开始初始化主窗口
+2024-11-13 07:29:49,319 [INFO] 设置窗口基本属性完成
+2024-11-13 07:29:49,320 [INFO] 创建中心部件完成
+2024-11-13 07:29:49,320 [INFO] 创建标签页控件完成
+2024-11-13 07:29:49,320 [INFO] 开始初始化ContractView
+2024-11-13 07:29:49,320 [INFO] 开始设置UI
+2024-11-13 07:29:49,329 [INFO] UI设置完成
+2024-11-13 07:29:49,329 [INFO] UI设置完成
+2024-11-13 07:29:49,330 [INFO] 添加合约信息标签页完成
+2024-11-13 07:29:49,330 [INFO] 主窗口界面初始化完成
+2024-11-13 07:29:49,391 [INFO] 主窗口显示事件触发
+2024-11-13 07:29:49,395 [INFO] 主窗口创建成功
+2024-11-13 07:29:49,395 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:29:49,397 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:29:49,398 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:29:49,398 [INFO] Scheduler started
+2024-11-13 07:29:49,398 [DEBUG] Looking for jobs to run
+2024-11-13 07:29:49,398 [INFO] 定时任务调度器启动成功
+2024-11-13 07:29:49,398 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 34210.601410 seconds)
+2024-11-13 07:29:49,398 [INFO] 定时任务设置完成
+2024-11-13 07:29:50,554 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:29:50,594 [DEBUG] Starting authorization phase
+2024-11-13 07:29:50,594 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:29:50,595 [INFO] package: mysql.connector.plugins
+2024-11-13 07:29:50,595 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:29:50,597 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:29:50,610 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:29:50,664 [INFO] 数据库连接成功
+2024-11-13 07:29:50,728 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:29:50,758 [INFO] 获取到5期货品种
+2024-11-13 07:29:51,753 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:51,861 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:29:51,920 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:29:51,924 [INFO] Tushare API 初始化成功
+2024-11-13 07:29:51,929 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:52,024 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:52,124 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:52,133 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:52,245 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:52,426 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:52,580 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:52,697 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:52,835 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:52,961 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:53,060 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:53,209 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:53,341 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:53,444 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:53,532 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:53,546 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:29:53,643 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:29:53,720 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:29:53,750 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:29:53,777 [DEBUG] Starting authorization phase
+2024-11-13 07:29:53,777 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:29:53,790 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:29:53,839 [INFO] 数据库连接成功
+2024-11-13 07:29:59,129 [INFO] 主窗口关闭事件触发
+2024-11-13 07:30:56,830 [INFO] 日志系统初始化完成
+2024-11-13 07:30:56,830 [INFO] 应用程序启动
+2024-11-13 07:30:56,843 [INFO] 开始初始化主窗口
+2024-11-13 07:30:56,843 [INFO] 设置窗口基本属性完成
+2024-11-13 07:30:56,843 [INFO] 创建中心部件完成
+2024-11-13 07:30:56,844 [INFO] 创建标签页控件完成
+2024-11-13 07:30:56,844 [INFO] 开始初始化ContractView
+2024-11-13 07:30:56,844 [INFO] 开始设置UI
+2024-11-13 07:30:56,853 [INFO] UI设置完成
+2024-11-13 07:30:56,853 [INFO] UI设置完成
+2024-11-13 07:30:56,854 [INFO] 添加合约信息标签页完成
+2024-11-13 07:30:56,854 [INFO] 主窗口界面初始化完成
+2024-11-13 07:30:56,914 [INFO] 主窗口显示事件触发
+2024-11-13 07:30:56,917 [INFO] 主窗口创建成功
+2024-11-13 07:30:56,917 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:30:56,919 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:30:56,920 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:30:56,920 [INFO] Scheduler started
+2024-11-13 07:30:56,921 [DEBUG] Looking for jobs to run
+2024-11-13 07:30:56,921 [INFO] 定时任务调度器启动成功
+2024-11-13 07:30:56,921 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 34143.078849 seconds)
+2024-11-13 07:30:56,921 [INFO] 定时任务设置完成
+2024-11-13 07:30:57,969 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:30:58,009 [DEBUG] Starting authorization phase
+2024-11-13 07:30:58,009 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:30:58,009 [INFO] package: mysql.connector.plugins
+2024-11-13 07:30:58,009 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:30:58,010 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:30:58,022 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:30:58,074 [INFO] 数据库连接成功
+2024-11-13 07:30:58,139 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:30:58,170 [INFO] 获取到8期货品种
+2024-11-13 07:30:58,971 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:30:59,094 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:30:59,157 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:30:59,158 [INFO] Tushare API 初始化成功
+2024-11-13 07:30:59,160 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:30:59,262 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:30:59,353 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:30:59,386 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:30:59,490 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:30:59,648 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:30:59,818 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:30:59,926 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:31:00,071 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:31:00,223 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:31:00,335 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:31:00,484 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:31:00,636 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:31:00,736 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:31:00,829 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:31:00,838 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:31:00,941 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic HTTP/11" 307 0
+2024-11-13 07:31:01,023 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_basic/ HTTP/11" 200 None
+2024-11-13 07:31:01,039 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:31:01,065 [DEBUG] Starting authorization phase
+2024-11-13 07:31:01,065 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:31:01,077 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:31:01,128 [INFO] 数据库连接成功
+2024-11-13 07:33:26,317 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:26,422 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:26,478 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:26,482 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:26,583 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:26,648 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:26,650 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:26,772 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:26,835 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:26,838 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:26,946 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,009 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,010 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:27,114 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,175 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,181 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:27,288 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,352 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,358 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:27,465 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,522 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,523 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:27,655 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,717 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,757 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:27,868 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:27,933 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:27,940 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,041 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:28,098 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:28,105 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,208 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:28,270 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:28,273 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,389 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:28,471 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:28,476 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,589 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:28,654 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:28,658 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,760 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:28,817 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:28,821 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:28,938 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,000 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,005 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,106 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,166 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,173 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,275 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,333 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,339 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,435 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,492 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,497 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,597 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,654 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,656 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,756 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,813 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,815 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:29,927 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:29,989 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:29,994 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,094 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:30,149 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:30,156 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,272 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:30,342 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:30,345 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,446 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:30,507 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:30,513 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,624 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:30,681 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:30,686 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,792 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:30,854 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:30,860 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:30,964 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,024 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,031 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,127 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,190 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,197 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,305 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,368 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,374 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,476 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,536 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,539 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,654 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,716 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,720 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,825 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:31,886 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:31,892 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:31,999 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,060 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,067 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:32,173 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,235 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,276 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:32,390 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,451 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,458 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:32,565 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,630 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,637 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:32,732 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,787 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,792 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:32,889 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:32,946 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:32,952 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,072 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:33,147 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:33,152 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,266 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:33,330 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:33,334 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,449 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:33,510 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:33,516 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,616 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:33,674 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:33,680 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,781 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:33,840 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:33,846 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:33,952 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,010 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,017 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,127 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,190 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,193 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,303 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,365 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,369 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,481 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,543 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,550 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,652 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,713 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,719 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,822 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:34,880 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:34,885 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:34,992 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,067 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,074 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:35,170 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,225 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,228 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:35,334 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,409 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,416 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:35,523 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,586 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,591 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:35,695 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,756 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,758 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:35,872 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:35,934 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:35,941 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,046 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:36,114 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:36,151 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,252 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:36,312 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:36,318 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,421 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:36,482 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:36,517 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,618 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:36,683 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:36,689 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,794 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:36,854 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:36,859 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:36,965 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,037 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,044 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:37,151 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,212 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,218 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:37,329 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,412 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,418 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:37,533 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,600 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,639 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:37,740 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,801 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,807 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:37,913 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:37,975 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:37,978 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,091 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:38,150 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:38,156 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,273 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:38,334 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:38,337 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,444 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:38,506 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:38,511 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,627 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:38,689 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:38,694 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,794 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:38,854 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:38,859 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:38,961 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,019 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,023 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:39,129 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,192 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,196 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:39,309 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,374 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,379 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:39,489 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,553 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,561 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:39,662 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,724 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,726 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:39,843 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:39,905 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:39,910 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:40,024 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:40,083 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:40,090 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:40,200 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:40,266 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:40,272 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:40,371 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:40,425 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:40,428 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:40,549 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:40,612 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:33:40,615 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:33:40,725 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:33:40,791 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:37:57,688 [INFO] 主窗口关闭事件触发
+2024-11-13 07:44:15,093 [INFO] 日志系统初始化完成
+2024-11-13 07:44:15,093 [INFO] 应用程序启动
+2024-11-13 07:44:15,106 [INFO] 开始初始化主窗口
+2024-11-13 07:44:15,106 [INFO] 设置窗口基本属性完成
+2024-11-13 07:44:15,106 [INFO] 创建中心部件完成
+2024-11-13 07:44:15,107 [INFO] 创建标签页控件完成
+2024-11-13 07:44:15,107 [INFO] 开始初始化ContractView
+2024-11-13 07:44:15,107 [INFO] 开始设置UI
+2024-11-13 07:44:15,116 [INFO] UI设置完成
+2024-11-13 07:44:15,116 [INFO] UI设置完成
+2024-11-13 07:44:15,117 [INFO] 添加合约信息标签页完成
+2024-11-13 07:44:15,118 [INFO] 主窗口界面初始化完成
+2024-11-13 07:44:15,178 [INFO] 主窗口显示事件触发
+2024-11-13 07:44:15,183 [INFO] 主窗口创建成功
+2024-11-13 07:44:15,183 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:44:15,185 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:44:15,186 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:44:15,186 [INFO] Scheduler started
+2024-11-13 07:44:15,186 [DEBUG] Looking for jobs to run
+2024-11-13 07:44:15,186 [INFO] 定时任务调度器启动成功
+2024-11-13 07:44:15,186 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 33344.813151 seconds)
+2024-11-13 07:44:15,186 [INFO] 定时任务设置完成
+2024-11-13 07:44:17,722 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:44:17,761 [DEBUG] Starting authorization phase
+2024-11-13 07:44:17,761 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:44:17,762 [INFO] package: mysql.connector.plugins
+2024-11-13 07:44:17,762 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:44:17,763 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:44:17,777 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:44:17,828 [INFO] 数据库连接成功
+2024-11-13 07:44:17,907 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:44:17,937 [INFO] 获取到8期货品种
+2024-11-13 07:44:17,945 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 07:44:17,975 [INFO] 获取到26期货品种
+2024-11-13 07:44:17,982 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 07:44:18,013 [INFO] 获取到22期货品种
+2024-11-13 07:44:18,019 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 07:44:18,044 [INFO] 获取到2期货品种
+2024-11-13 07:44:18,045 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 07:44:18,071 [INFO] 获取到6期货品种
+2024-11-13 07:44:18,075 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 07:44:18,108 [INFO] 获取到18期货品种
+2024-11-13 07:44:21,182 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:21,303 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:44:21,364 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:44:21,365 [INFO] Tushare API 初始化成功
+2024-11-13 07:44:21,366 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:44:21,392 [DEBUG] Starting authorization phase
+2024-11-13 07:44:21,392 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:44:21,405 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:44:21,453 [INFO] 数据库连接成功
+2024-11-13 07:44:21,726 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:21,838 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:21,900 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:21,906 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,013 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,075 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,078 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,179 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,238 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,241 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,341 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,398 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,401 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,509 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,569 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,571 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,683 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,743 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,746 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:22,860 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:22,923 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:22,930 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,035 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,092 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,126 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,222 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,279 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,282 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,388 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,445 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,451 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,551 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,654 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,658 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,757 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,815 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,819 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:23,927 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:23,989 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:23,993 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,101 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,160 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,163 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,257 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,311 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,314 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,412 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,469 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,473 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,574 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,631 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,637 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,750 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,813 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,819 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:24,915 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:24,972 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:24,976 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,081 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,138 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,141 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,243 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,301 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,304 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,400 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,454 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,458 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,565 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,626 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,632 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,741 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,809 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,813 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:25,913 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:25,969 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:25,977 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,083 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,143 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,148 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,263 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,321 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,324 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,425 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,481 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,483 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,586 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,643 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,646 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,753 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,814 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,819 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:26,931 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:26,989 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:26,993 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,103 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:27,161 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:27,168 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,273 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:27,331 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:27,335 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,439 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:27,499 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:27,533 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,643 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:27,704 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:27,710 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,821 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:27,877 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:27,884 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:27,995 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,055 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,058 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,163 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,223 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,227 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,330 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,385 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,390 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,490 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,552 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,556 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,661 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,721 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,725 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,827 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:28,886 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:28,889 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:28,991 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,049 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,052 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:29,161 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,216 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,221 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:29,314 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,369 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,375 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:29,486 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,542 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,545 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:29,660 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,725 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,729 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:29,825 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:29,893 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:29,899 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,013 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,076 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,081 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,190 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,247 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,252 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,350 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,406 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,413 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,518 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,574 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,577 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,683 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,739 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,743 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,843 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:30,903 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:30,906 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:30,998 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,049 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,052 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:31,161 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,228 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,257 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:31,361 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,420 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,428 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:31,536 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,607 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,640 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:31,754 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,820 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,827 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:31,930 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:31,987 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:31,990 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,093 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,144 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:32,148 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,255 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,311 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:32,314 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,424 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,483 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:32,487 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,581 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,637 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:32,673 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,786 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,845 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:32,852 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:32,946 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:32,999 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,007 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,104 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,156 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,158 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,252 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,321 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,326 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,420 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,473 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,480 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,588 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,642 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,645 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,744 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,801 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,804 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:33,902 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:33,966 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:33,970 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,070 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,125 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,129 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,232 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,291 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,295 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,399 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,458 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,461 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,565 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,627 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,631 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,735 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,789 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,791 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:34,884 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:34,937 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:34,944 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:35,041 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:35,092 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:35,095 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:35,196 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:35,254 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:35,257 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:35,353 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:35,405 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:44:35,409 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:44:35,505 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:44:35,558 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 158
+2024-11-13 07:45:05,446 [INFO] 主窗口显示事件触发
+2024-11-13 07:51:30,427 [INFO] 日志系统初始化完成
+2024-11-13 07:51:30,427 [INFO] 应用程序启动
+2024-11-13 07:51:30,440 [INFO] 开始初始化主窗口
+2024-11-13 07:51:30,440 [INFO] 设置窗口基本属性完成
+2024-11-13 07:51:30,440 [INFO] 创建中心部件完成
+2024-11-13 07:51:30,441 [INFO] 创建标签页控件完成
+2024-11-13 07:51:30,441 [INFO] 开始初始化ContractView
+2024-11-13 07:51:30,441 [INFO] 开始设置UI
+2024-11-13 07:51:30,450 [INFO] UI设置完成
+2024-11-13 07:51:30,450 [INFO] UI设置完成
+2024-11-13 07:51:30,451 [INFO] 添加合约信息标签页完成
+2024-11-13 07:51:30,451 [INFO] 主窗口界面初始化完成
+2024-11-13 07:51:30,511 [INFO] 主窗口显示事件触发
+2024-11-13 07:51:30,516 [INFO] 主窗口创建成功
+2024-11-13 07:51:30,516 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:51:30,518 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:51:30,518 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:51:30,518 [INFO] Scheduler started
+2024-11-13 07:51:30,519 [DEBUG] Looking for jobs to run
+2024-11-13 07:51:30,519 [INFO] 定时任务调度器启动成功
+2024-11-13 07:51:30,519 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 32909.480370 seconds)
+2024-11-13 07:51:30,519 [INFO] 定时任务设置完成
+2024-11-13 07:51:31,946 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:51:31,984 [DEBUG] Starting authorization phase
+2024-11-13 07:51:31,985 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:51:31,985 [INFO] package: mysql.connector.plugins
+2024-11-13 07:51:31,985 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:51:31,987 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:51:32,000 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:51:32,051 [INFO] 数据库连接成功
+2024-11-13 07:51:32,133 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:51:32,162 [INFO] 获取到8期货品种
+2024-11-13 07:51:32,170 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 07:51:32,200 [INFO] 获取到26期货品种
+2024-11-13 07:51:32,206 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 07:51:32,237 [INFO] 获取到22期货品种
+2024-11-13 07:51:32,243 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 07:51:32,268 [INFO] 获取到2期货品种
+2024-11-13 07:51:32,269 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 07:51:32,295 [INFO] 获取到6期货品种
+2024-11-13 07:51:32,300 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 07:51:32,332 [INFO] 获取到18期货品种
+2024-11-13 07:51:34,367 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:34,481 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:51:34,544 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:51:34,546 [INFO] Tushare API 初始化成功
+2024-11-13 07:51:34,549 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:51:34,574 [DEBUG] Starting authorization phase
+2024-11-13 07:51:34,574 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:51:34,587 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:51:34,640 [INFO] 数据库连接成功
+2024-11-13 07:51:34,911 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:35,023 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:35,351 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:35,353 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:35,460 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:35,771 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:35,779 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:35,887 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:36,182 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:36,192 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:36,287 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:36,582 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:36,591 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:36,698 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:37,035 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:37,042 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:37,142 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:37,483 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:37,490 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:37,598 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:37,927 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:37,936 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:38,050 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:38,355 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:38,397 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:38,508 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:38,837 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:38,846 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:38,948 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:39,280 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:39,287 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:39,387 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:39,691 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:39,698 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:39,813 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:40,109 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:40,117 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:40,212 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:40,533 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:40,538 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:40,644 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:40,951 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:40,957 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:41,068 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:41,380 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:41,387 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:41,492 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:41,819 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:41,823 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:41,923 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:42,223 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:42,230 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:42,344 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:42,633 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:42,641 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:42,744 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:43,054 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:43,063 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:43,178 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:43,489 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:43,494 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:43,605 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:43,906 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:43,909 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:44,013 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:44,321 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:44,329 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:44,446 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:44,756 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:44,763 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:44,867 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:45,163 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:45,171 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:45,276 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:45,576 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:45,582 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:45,690 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:45,991 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:45,995 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:46,097 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:46,398 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:46,403 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:46,520 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:46,822 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:46,829 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:46,938 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:47,244 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:47,251 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:47,369 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:47,679 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:47,682 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:47,796 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:48,109 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:48,115 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:48,215 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:48,521 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:48,528 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:48,630 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:48,938 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:48,943 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:49,038 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:49,410 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:49,452 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:49,554 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:49,872 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:49,881 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:49,981 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:50,289 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:50,294 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:50,404 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:50,717 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:50,722 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:50,827 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:51,125 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:51,130 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:51,227 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:51,535 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:51,538 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:51,658 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:51,987 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:51,995 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:52,099 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:52,408 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:52,413 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:52,525 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:52,833 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:52,839 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:52,941 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:53,231 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:53,238 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:53,344 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:53,643 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:53,650 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:53,761 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:54,208 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:54,214 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:54,330 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:54,647 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:54,655 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:54,754 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:55,074 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:55,081 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:55,190 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:55,490 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:55,499 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:55,608 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:55,919 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:55,923 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:56,028 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:56,332 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:56,340 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:56,442 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:56,744 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:56,752 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:56,864 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:57,162 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:57,169 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:57,271 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:57,560 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:57,568 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:57,671 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:57,992 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:57,999 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:58,100 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:58,404 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:58,411 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:58,528 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:58,866 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:58,901 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:59,006 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:59,311 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:59,318 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:59,424 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:51:59,731 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:51:59,761 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:51:59,863 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:00,151 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:00,155 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:00,272 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:00,584 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:00,592 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:00,692 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:00,995 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:01,003 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:01,117 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:01,435 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:01,438 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:01,542 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:01,842 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:01,845 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:01,947 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:02,224 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:02,259 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:02,362 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:02,655 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:02,659 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:02,766 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:03,078 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:03,083 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:03,184 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:03,500 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:03,502 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:03,619 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:03,901 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:03,909 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:04,011 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:04,319 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:04,322 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:04,431 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:04,732 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:04,739 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:04,849 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:05,147 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:05,150 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:05,250 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:05,589 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:05,596 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:05,710 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:06,038 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:06,045 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:06,151 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:06,471 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:06,479 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:06,585 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:06,877 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:06,884 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:06,987 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:07,308 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:07,311 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:07,415 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:07,703 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:07,707 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:07,810 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:08,100 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:08,104 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:08,212 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:08,517 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:08,521 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:08,625 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:08,930 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:08,934 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:09,050 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:09,332 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:52:09,336 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:52:09,439 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:52:09,725 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:25,938 [INFO] 主窗口关闭事件触发
+2024-11-13 07:54:31,252 [INFO] 日志系统初始化完成
+2024-11-13 07:54:31,252 [INFO] 应用程序启动
+2024-11-13 07:54:31,264 [INFO] 开始初始化主窗口
+2024-11-13 07:54:31,264 [INFO] 设置窗口基本属性完成
+2024-11-13 07:54:31,264 [INFO] 创建中心部件完成
+2024-11-13 07:54:31,265 [INFO] 创建标签页控件完成
+2024-11-13 07:54:31,265 [INFO] 开始初始化ContractView
+2024-11-13 07:54:31,265 [INFO] 开始设置UI
+2024-11-13 07:54:31,274 [INFO] UI设置完成
+2024-11-13 07:54:31,274 [INFO] UI设置完成
+2024-11-13 07:54:31,275 [INFO] 添加合约信息标签页完成
+2024-11-13 07:54:31,275 [INFO] 主窗口界面初始化完成
+2024-11-13 07:54:31,334 [INFO] 主窗口显示事件触发
+2024-11-13 07:54:31,338 [INFO] 主窗口创建成功
+2024-11-13 07:54:31,338 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:54:31,340 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:54:31,341 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:54:31,341 [INFO] Scheduler started
+2024-11-13 07:54:31,341 [DEBUG] Looking for jobs to run
+2024-11-13 07:54:31,341 [INFO] 定时任务调度器启动成功
+2024-11-13 07:54:31,341 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 32728.658634 seconds)
+2024-11-13 07:54:31,341 [INFO] 定时任务设置完成
+2024-11-13 07:54:35,042 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:54:35,082 [DEBUG] Starting authorization phase
+2024-11-13 07:54:35,082 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:54:35,082 [INFO] package: mysql.connector.plugins
+2024-11-13 07:54:35,083 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:54:35,084 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:54:35,098 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:54:35,150 [INFO] 数据库连接成功
+2024-11-13 07:54:35,234 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:54:35,264 [INFO] 获取到8期货品种
+2024-11-13 07:54:35,271 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 07:54:35,304 [INFO] 获取到26期货品种
+2024-11-13 07:54:35,310 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 07:54:35,343 [INFO] 获取到22期货品种
+2024-11-13 07:54:35,348 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 07:54:35,373 [INFO] 获取到2期货品种
+2024-11-13 07:54:35,375 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 07:54:35,402 [INFO] 获取到6期货品种
+2024-11-13 07:54:35,407 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 07:54:35,442 [INFO] 获取到18期货品种
+2024-11-13 07:54:36,879 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:37,006 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:54:37,067 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:54:37,071 [INFO] Tushare API 初始化成功
+2024-11-13 07:54:37,073 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:54:37,099 [DEBUG] Starting authorization phase
+2024-11-13 07:54:37,099 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:54:37,112 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:54:37,162 [INFO] 数据库连接成功
+2024-11-13 07:54:37,453 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:37,567 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:37,903 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:37,908 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:38,012 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:38,317 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:38,322 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:38,429 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:38,724 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:38,728 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:38,831 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:39,118 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:39,121 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:39,231 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:39,533 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:39,538 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:39,637 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:39,914 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:39,916 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:40,017 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:40,315 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:40,320 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:40,422 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:40,714 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:40,749 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:40,857 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:41,150 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:41,153 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:41,260 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:41,556 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:41,563 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:41,668 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:41,985 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:41,989 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:42,099 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:42,442 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:42,446 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:42,556 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:42,871 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:42,878 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:42,989 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:43,286 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:43,293 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:43,394 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:43,696 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:43,699 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:43,816 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:44,101 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:44,106 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:44,208 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:44,507 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:44,514 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:44,636 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:44,949 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:44,953 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:45,062 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:45,368 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:45,375 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:45,482 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:45,776 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:45,783 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:45,883 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:46,187 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:46,191 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:46,288 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:46,573 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:46,577 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:46,685 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:46,992 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:47,000 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:47,099 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:47,404 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:47,411 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:47,512 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:47,863 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:47,870 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:47,965 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:48,253 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:48,257 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:48,356 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:48,645 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:48,653 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:48,756 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:49,037 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:49,044 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:49,147 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:49,480 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:49,484 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:49,594 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:49,931 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:49,936 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:50,037 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:50,336 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:50,341 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:50,455 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:50,764 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:50,772 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:50,879 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:51,179 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:51,187 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:51,293 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:51,588 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:51,631 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:51,742 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:52,062 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:52,068 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:52,168 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:52,483 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:52,487 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:52,587 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:52,882 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:52,887 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:52,992 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:53,287 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:53,295 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:53,402 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:53,701 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:54:53,707 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:54:53,811 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:54:54,138 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:28,206 [INFO] 日志系统初始化完成
+2024-11-13 07:57:28,206 [INFO] 应用程序启动
+2024-11-13 07:57:28,220 [INFO] 开始初始化主窗口
+2024-11-13 07:57:28,220 [INFO] 设置窗口基本属性完成
+2024-11-13 07:57:28,220 [INFO] 创建中心部件完成
+2024-11-13 07:57:28,220 [INFO] 创建标签页控件完成
+2024-11-13 07:57:28,220 [INFO] 开始初始化ContractView
+2024-11-13 07:57:28,220 [INFO] 开始设置UI
+2024-11-13 07:57:28,229 [INFO] UI设置完成
+2024-11-13 07:57:28,229 [INFO] UI设置完成
+2024-11-13 07:57:28,230 [INFO] 添加合约信息标签页完成
+2024-11-13 07:57:28,230 [INFO] 主窗口界面初始化完成
+2024-11-13 07:57:28,287 [INFO] 主窗口显示事件触发
+2024-11-13 07:57:28,290 [INFO] 主窗口创建成功
+2024-11-13 07:57:28,290 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:57:28,292 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:57:28,293 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:57:28,293 [INFO] Scheduler started
+2024-11-13 07:57:28,293 [DEBUG] Looking for jobs to run
+2024-11-13 07:57:28,293 [INFO] 定时任务调度器启动成功
+2024-11-13 07:57:28,293 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 32551.706297 seconds)
+2024-11-13 07:57:28,294 [INFO] 定时任务设置完成
+2024-11-13 07:57:29,811 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:57:29,846 [DEBUG] Starting authorization phase
+2024-11-13 07:57:29,846 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:57:29,846 [INFO] package: mysql.connector.plugins
+2024-11-13 07:57:29,846 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:57:29,847 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:57:29,859 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:57:29,911 [INFO] 数据库连接成功
+2024-11-13 07:57:29,996 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:57:30,026 [INFO] 获取到8期货品种
+2024-11-13 07:57:30,034 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 07:57:30,066 [INFO] 获取到26期货品种
+2024-11-13 07:57:30,072 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 07:57:30,104 [INFO] 获取到22期货品种
+2024-11-13 07:57:30,110 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 07:57:30,135 [INFO] 获取到2期货品种
+2024-11-13 07:57:30,137 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 07:57:30,163 [INFO] 获取到6期货品种
+2024-11-13 07:57:30,166 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 07:57:30,199 [INFO] 获取到18期货品种
+2024-11-13 07:57:31,582 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:31,701 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:57:31,769 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:57:31,770 [INFO] Tushare API 初始化成功
+2024-11-13 07:57:31,772 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:57:31,798 [DEBUG] Starting authorization phase
+2024-11-13 07:57:31,798 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:57:31,811 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:57:31,860 [INFO] 数据库连接成功
+2024-11-13 07:57:32,145 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:32,256 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:32,329 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:32,336 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:32,441 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:32,499 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:32,503 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:32,599 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:32,652 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:32,656 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:32,762 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:32,820 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:32,825 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:32,929 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:32,987 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:32,989 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:33,109 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:33,171 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:33,175 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:33,289 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:33,353 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:33,356 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:33,453 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:33,506 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:33,541 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:33,647 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:33,709 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:33,712 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:33,835 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:33,895 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:33,898 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,007 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,067 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,070 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,175 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,243 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,246 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,351 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,409 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,412 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,512 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,567 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,569 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,663 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,715 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,718 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:34,832 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:34,896 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:34,904 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,005 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,060 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,063 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,168 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,229 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,233 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,331 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,385 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,388 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,494 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,554 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,558 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,670 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,727 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,730 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:35,823 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:35,893 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:35,898 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,001 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,057 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,062 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,174 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,230 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,233 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,329 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,382 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,384 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,488 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,545 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,549 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,656 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,717 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,720 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,823 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:36,883 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:36,891 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:36,998 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,060 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,067 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:37,169 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,227 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,232 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:37,340 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,404 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,410 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:37,511 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,575 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,582 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:37,687 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,755 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,762 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:37,874 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:37,941 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:37,975 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,075 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,132 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,136 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,245 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,308 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,315 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,411 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,467 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,471 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,575 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,636 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,640 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,746 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,805 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,812 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:38,920 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:38,982 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:38,988 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,086 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:39,150 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:39,152 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,259 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:39,320 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:39,327 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,430 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:39,495 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:39,499 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,608 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:39,684 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:39,691 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,801 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:39,866 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:39,873 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:39,979 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,043 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,049 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:40,159 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,235 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,242 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:40,347 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,406 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,411 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:40,532 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,593 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,602 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:40,730 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,796 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,803 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:40,908 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:40,969 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:40,977 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,093 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:41,175 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:41,183 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,285 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:41,348 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:41,353 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,461 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:41,523 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:41,528 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,627 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:41,686 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:41,690 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,790 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:41,848 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:41,879 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:41,984 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,042 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,046 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:42,156 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,218 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,248 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:42,355 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,416 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,424 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:42,528 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,588 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,596 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:42,706 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,770 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,775 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:42,881 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:42,943 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:42,946 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,071 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:43,136 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:43,146 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,250 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:43,308 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:43,349 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,456 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:43,519 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:43,527 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,640 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:43,702 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:43,709 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,815 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:43,877 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:43,885 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:43,987 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,048 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,057 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:44,164 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,228 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,237 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:44,345 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,407 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,413 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:44,519 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,584 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,590 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:44,700 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,765 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,773 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:44,885 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:44,945 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:44,949 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,052 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,112 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,117 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,222 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,291 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,294 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,401 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,464 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,469 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,574 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,636 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,644 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,753 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,815 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,822 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:45,927 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:45,988 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:45,992 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:46,095 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:46,188 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:46,192 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:46,297 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:46,355 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:57:46,365 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:57:46,474 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:57:46,537 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:04,068 [INFO] 日志系统初始化完成
+2024-11-13 07:59:04,068 [INFO] 应用程序启动
+2024-11-13 07:59:04,080 [INFO] 开始初始化主窗口
+2024-11-13 07:59:04,081 [INFO] 设置窗口基本属性完成
+2024-11-13 07:59:04,081 [INFO] 创建中心部件完成
+2024-11-13 07:59:04,081 [INFO] 创建标签页控件完成
+2024-11-13 07:59:04,081 [INFO] 开始初始化ContractView
+2024-11-13 07:59:04,081 [INFO] 开始设置UI
+2024-11-13 07:59:04,090 [INFO] UI设置完成
+2024-11-13 07:59:04,091 [INFO] UI设置完成
+2024-11-13 07:59:04,091 [INFO] 添加合约信息标签页完成
+2024-11-13 07:59:04,092 [INFO] 主窗口界面初始化完成
+2024-11-13 07:59:04,152 [INFO] 主窗口显示事件触发
+2024-11-13 07:59:04,155 [INFO] 主窗口创建成功
+2024-11-13 07:59:04,155 [DEBUG] Looking up time zone info from registry
+2024-11-13 07:59:04,157 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 07:59:04,157 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 07:59:04,157 [INFO] Scheduler started
+2024-11-13 07:59:04,158 [DEBUG] Looking for jobs to run
+2024-11-13 07:59:04,158 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 32455.841965 seconds)
+2024-11-13 07:59:04,158 [INFO] 定时任务调度器启动成功
+2024-11-13 07:59:04,158 [INFO] 定时任务设置完成
+2024-11-13 07:59:05,683 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:59:05,721 [DEBUG] Starting authorization phase
+2024-11-13 07:59:05,721 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:59:05,721 [INFO] package: mysql.connector.plugins
+2024-11-13 07:59:05,721 [INFO] plugin_name: mysql_native_password
+2024-11-13 07:59:05,722 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 07:59:05,735 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:59:05,788 [INFO] 数据库连接成功
+2024-11-13 07:59:05,868 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 07:59:05,900 [INFO] 获取到8期货品种
+2024-11-13 07:59:05,907 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 07:59:05,938 [INFO] 获取到26期货品种
+2024-11-13 07:59:05,946 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 07:59:05,976 [INFO] 获取到22期货品种
+2024-11-13 07:59:05,982 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 07:59:06,007 [INFO] 获取到2期货品种
+2024-11-13 07:59:06,009 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 07:59:06,036 [INFO] 获取到6期货品种
+2024-11-13 07:59:06,041 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 07:59:06,073 [INFO] 获取到18期货品种
+2024-11-13 07:59:07,013 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:07,111 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 07:59:07,169 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 07:59:07,173 [INFO] Tushare API 初始化成功
+2024-11-13 07:59:07,175 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 07:59:07,201 [DEBUG] Starting authorization phase
+2024-11-13 07:59:07,201 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 07:59:07,214 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 07:59:07,265 [INFO] 数据库连接成功
+2024-11-13 07:59:07,540 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:07,644 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:07,706 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:07,710 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:07,823 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:07,890 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:07,893 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:07,994 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,050 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,054 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:08,159 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,218 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,227 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:08,345 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,403 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,408 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:08,507 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,576 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,579 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:08,692 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,757 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,764 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:08,859 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:08,926 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:08,959 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,065 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,122 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,125 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,228 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,284 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,288 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,387 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,445 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,447 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,552 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,621 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,624 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,736 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,797 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,801 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:09,906 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:09,964 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:09,967 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,075 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,133 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,135 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,241 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,303 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,307 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,407 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,468 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,474 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,577 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,634 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,638 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,750 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,810 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,814 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:10,920 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:10,977 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:10,979 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,077 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,131 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,133 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,241 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,299 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,303 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,408 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,466 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,469 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,568 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,622 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,625 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,722 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,775 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,779 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:11,874 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:11,932 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:11,935 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,039 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,100 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,106 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,225 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,292 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,297 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,394 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,450 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,457 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,562 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,620 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,628 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,741 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,802 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,806 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:12,909 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:12,970 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:12,975 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:13,076 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:13,149 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:13,156 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:13,265 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:13,333 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:13,376 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:13,498 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:13,560 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:13,618 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:13,737 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:13,800 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:13,853 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:13,964 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:14,026 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:14,083 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:14,197 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:14,262 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:14,320 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:14,427 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:14,487 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:14,565 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:14,671 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:14,747 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:14,798 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:14,913 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:14,973 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:15,024 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:15,134 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:15,191 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:15,244 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:15,358 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:15,424 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:15,480 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:15,589 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:15,650 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:15,705 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:15,809 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:15,869 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:15,925 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:16,031 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:16,090 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:16,146 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:16,301 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:16,367 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:16,426 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:16,532 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:16,590 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:16,599 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:16,711 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:16,788 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:16,840 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:16,947 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:17,006 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:17,058 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:17,174 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:17,237 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:17,295 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:17,399 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:17,472 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:17,528 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:17,647 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:17,709 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:17,763 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:17,874 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:17,940 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:17,997 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:18,103 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:18,165 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:18,216 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:18,319 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:18,377 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 07:59:18,456 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:18,564 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:18,625 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:18,631 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:18,740 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:18,806 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:18,839 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:18,951 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:19,014 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:19,067 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:19,168 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:19,224 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:19,278 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:19,384 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:19,444 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:19,501 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:19,612 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:19,684 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:19,739 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:19,835 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:19,890 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 07:59:19,942 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,055 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:20,114 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:20,155 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,266 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:20,327 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:20,333 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,437 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:20,505 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:20,510 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,615 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:20,676 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:20,682 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,786 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:20,847 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:20,854 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:20,961 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,041 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,049 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:21,164 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,231 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,237 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:21,340 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,397 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,403 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:21,512 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,571 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,577 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:21,688 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,743 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,750 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:21,852 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:21,909 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:21,914 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,019 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,077 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,082 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,185 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,245 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,252 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,355 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,411 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,416 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,517 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,578 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,584 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,693 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,756 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,761 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:22,870 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:22,937 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:22,942 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:23,057 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:23,118 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 07:59:23,123 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 07:59:23,231 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 07:59:23,293 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:31,896 [INFO] 日志系统初始化完成
+2024-11-13 08:07:31,896 [INFO] 应用程序启动
+2024-11-13 08:07:31,909 [INFO] 开始初始化主窗口
+2024-11-13 08:07:31,909 [INFO] 设置窗口基本属性完成
+2024-11-13 08:07:31,909 [INFO] 创建中心部件完成
+2024-11-13 08:07:31,909 [INFO] 创建标签页控件完成
+2024-11-13 08:07:31,910 [INFO] 开始初始化ContractView
+2024-11-13 08:07:31,910 [INFO] 开始设置UI
+2024-11-13 08:07:31,919 [INFO] UI设置完成
+2024-11-13 08:07:31,919 [INFO] UI设置完成
+2024-11-13 08:07:31,920 [INFO] 添加合约信息标签页完成
+2024-11-13 08:07:31,920 [INFO] 主窗口界面初始化完成
+2024-11-13 08:07:31,986 [INFO] 主窗口显示事件触发
+2024-11-13 08:07:31,989 [INFO] 主窗口创建成功
+2024-11-13 08:07:31,989 [DEBUG] Looking up time zone info from registry
+2024-11-13 08:07:31,992 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 08:07:31,992 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 08:07:31,992 [INFO] Scheduler started
+2024-11-13 08:07:31,993 [DEBUG] Looking for jobs to run
+2024-11-13 08:07:31,993 [INFO] 定时任务调度器启动成功
+2024-11-13 08:07:31,993 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 31948.006945 seconds)
+2024-11-13 08:07:31,993 [INFO] 定时任务设置完成
+2024-11-13 08:07:33,411 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 08:07:33,450 [DEBUG] Starting authorization phase
+2024-11-13 08:07:33,451 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 08:07:33,451 [INFO] package: mysql.connector.plugins
+2024-11-13 08:07:33,451 [INFO] plugin_name: mysql_native_password
+2024-11-13 08:07:33,453 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 08:07:33,466 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 08:07:33,518 [INFO] 数据库连接成功
+2024-11-13 08:07:33,599 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 08:07:33,628 [INFO] 获取到8期货品种
+2024-11-13 08:07:33,635 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 08:07:33,666 [INFO] 获取到26期货品种
+2024-11-13 08:07:33,672 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 08:07:33,703 [INFO] 获取到22期货品种
+2024-11-13 08:07:33,709 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 08:07:33,734 [INFO] 获取到2期货品种
+2024-11-13 08:07:33,735 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 08:07:33,764 [INFO] 获取到6期货品种
+2024-11-13 08:07:33,766 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 08:07:33,798 [INFO] 获取到18期货品种
+2024-11-13 08:07:34,934 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:35,052 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 08:07:35,115 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 08:07:35,116 [INFO] Tushare API 初始化成功
+2024-11-13 08:07:35,117 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 08:07:35,142 [DEBUG] Starting authorization phase
+2024-11-13 08:07:35,142 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 08:07:35,155 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 08:07:35,204 [INFO] 数据库连接成功
+2024-11-13 08:07:35,480 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:35,590 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:35,650 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:35,656 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:35,751 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:35,805 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:35,808 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:35,919 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:35,972 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:35,975 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,075 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:36,130 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:36,133 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,237 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:36,309 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:36,315 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,419 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:36,480 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:36,482 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,578 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:36,630 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:36,633 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,747 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:36,820 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:36,856 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:36,949 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,003 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,006 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,108 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,174 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,177 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,269 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,332 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,335 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,433 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,487 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,489 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,592 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,659 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,663 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,763 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,818 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,821 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:37,921 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:37,977 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:37,979 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,088 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:38,158 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:38,160 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,261 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:38,316 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:38,319 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,436 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:38,495 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:38,497 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,611 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:38,673 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:38,676 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,775 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:38,833 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:38,835 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:38,942 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,001 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,004 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,108 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,177 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,180 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,280 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,335 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,339 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,445 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,501 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,503 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,610 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,677 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,680 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,785 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:39,844 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:39,847 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:39,948 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,020 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,025 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,132 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,187 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,192 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,291 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,346 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,349 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,450 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,506 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,508 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,600 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,651 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,654 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,764 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:40,839 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:40,847 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:40,963 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:41,023 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:41,025 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:41,123 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:41,190 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 171
+2024-11-13 08:07:41,225 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:41,330 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:41,388 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 08:07:41,436 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:41,538 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:41,594 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 203
+2024-11-13 08:07:41,638 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:07:41,736 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping HTTP/11" 307 0
+2024-11-13 08:07:41,790 [DEBUG] http://api.waditu.com:80 "POST /dataapi/fut_mapping/ HTTP/11" 200 205
+2024-11-13 08:10:03,525 [INFO] 日志系统初始化完成
+2024-11-13 08:10:03,525 [INFO] 应用程序启动
+2024-11-13 08:10:03,537 [INFO] 开始初始化主窗口
+2024-11-13 08:10:03,537 [INFO] 设置窗口基本属性完成
+2024-11-13 08:10:03,538 [INFO] 创建中心部件完成
+2024-11-13 08:10:03,538 [INFO] 创建标签页控件完成
+2024-11-13 08:10:03,538 [INFO] 开始初始化ContractView
+2024-11-13 08:10:03,538 [INFO] 开始设置UI
+2024-11-13 08:10:03,547 [INFO] UI设置完成
+2024-11-13 08:10:03,547 [INFO] UI设置完成
+2024-11-13 08:10:03,548 [INFO] 添加合约信息标签页完成
+2024-11-13 08:10:03,548 [INFO] 主窗口界面初始化完成
+2024-11-13 08:10:03,614 [INFO] 主窗口显示事件触发
+2024-11-13 08:10:03,617 [INFO] 主窗口创建成功
+2024-11-13 08:10:03,617 [DEBUG] Looking up time zone info from registry
+2024-11-13 08:10:03,619 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 08:10:03,620 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 08:10:03,620 [INFO] Scheduler started
+2024-11-13 08:10:03,620 [DEBUG] Looking for jobs to run
+2024-11-13 08:10:03,620 [INFO] 定时任务调度器启动成功
+2024-11-13 08:10:03,620 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 31796.379197 seconds)
+2024-11-13 08:10:03,620 [INFO] 定时任务设置完成
+2024-11-13 08:10:05,026 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 08:10:05,064 [DEBUG] Starting authorization phase
+2024-11-13 08:10:05,065 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 08:10:05,065 [INFO] package: mysql.connector.plugins
+2024-11-13 08:10:05,065 [INFO] plugin_name: mysql_native_password
+2024-11-13 08:10:05,066 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 08:10:05,079 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 08:10:05,131 [INFO] 数据库连接成功
+2024-11-13 08:10:05,211 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 08:10:05,239 [INFO] 获取到8期货品种
+2024-11-13 08:10:05,247 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 08:10:05,277 [INFO] 获取到26期货品种
+2024-11-13 08:10:05,283 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 08:10:05,314 [INFO] 获取到22期货品种
+2024-11-13 08:10:05,320 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 08:10:05,345 [INFO] 获取到2期货品种
+2024-11-13 08:10:05,346 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 08:10:05,372 [INFO] 获取到6期货品种
+2024-11-13 08:10:05,375 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 08:10:05,408 [INFO] 获取到18期货品种
+2024-11-13 08:10:06,631 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 08:10:06,732 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 08:10:06,790 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 08:10:06,794 [INFO] Tushare API 初始化成功
+2024-11-13 08:10:06,796 [ERROR] 创建更新线程失败: 'UpdateMainThread' object has no attribute 'cancel'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 1050, in update_main_contracts
+    progress_dialog.cancelled.connect(self.update_main_thread.cancel)
+AttributeError: 'UpdateMainThread' object has no attribute 'cancel'
+
+2024-11-13 08:10:18,097 [INFO] 主窗口关闭事件触发
+2024-11-13 09:02:25,090 [INFO] 日志系统初始化完成
+2024-11-13 09:02:25,090 [INFO] 应用程序启动
+2024-11-13 09:02:25,103 [INFO] 开始初始化主窗口
+2024-11-13 09:02:25,103 [INFO] 设置窗口基本属性完成
+2024-11-13 09:02:25,103 [INFO] 创建中心部件完成
+2024-11-13 09:02:25,103 [INFO] 创建标签页控件完成
+2024-11-13 09:02:25,103 [INFO] 开始初始化ContractView
+2024-11-13 09:02:25,104 [INFO] 开始设置UI
+2024-11-13 09:02:25,113 [INFO] UI设置完成
+2024-11-13 09:02:25,113 [INFO] UI设置完成
+2024-11-13 09:02:25,114 [INFO] 添加合约信息标签页完成
+2024-11-13 09:02:25,114 [INFO] 主窗口界面初始化完成
+2024-11-13 09:02:25,176 [INFO] 主窗口显示事件触发
+2024-11-13 09:02:25,179 [INFO] 主窗口创建成功
+2024-11-13 09:02:25,179 [DEBUG] Looking up time zone info from registry
+2024-11-13 09:02:25,181 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-11-13 09:02:25,182 [INFO] Added job "每日数据更新" to job store "default"
+2024-11-13 09:02:25,182 [INFO] Scheduler started
+2024-11-13 09:02:25,182 [DEBUG] Looking for jobs to run
+2024-11-13 09:02:25,182 [INFO] 定时任务调度器启动成功
+2024-11-13 09:02:25,182 [DEBUG] Next wakeup is due at 2024-11-13 17:00:00+08:00 (in 28654.817357 seconds)
+2024-11-13 09:02:25,182 [INFO] 定时任务设置完成
+2024-11-13 09:02:27,230 [INFO] 尝试连接数据库 (尝试 1/3)
+2024-11-13 09:02:27,268 [DEBUG] Starting authorization phase
+2024-11-13 09:02:27,268 [DEBUG] The provided initial strategy is mysql_native_password
+2024-11-13 09:02:27,268 [INFO] package: mysql.connector.plugins
+2024-11-13 09:02:27,269 [INFO] plugin_name: mysql_native_password
+2024-11-13 09:02:27,269 [INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2024-11-13 09:02:27,282 [DEBUG] mysql_native_password completed succesfully
+2024-11-13 09:02:27,334 [INFO] 数据库连接成功
+2024-11-13 09:02:27,412 [INFO] 开始创建CFFEX的期货品种按钮
+2024-11-13 09:02:27,442 [INFO] 获取到8期货品种
+2024-11-13 09:02:27,450 [INFO] 开始创建CZCE的期货品种按钮
+2024-11-13 09:02:27,481 [INFO] 获取到26期货品种
+2024-11-13 09:02:27,488 [INFO] 开始创建DCE的期货品种按钮
+2024-11-13 09:02:27,519 [INFO] 获取到22期货品种
+2024-11-13 09:02:27,524 [INFO] 开始创建GFEX的期货品种按钮
+2024-11-13 09:02:27,549 [INFO] 获取到2期货品种
+2024-11-13 09:02:27,550 [INFO] 开始创建INE的期货品种按钮
+2024-11-13 09:02:27,577 [INFO] 获取到6期货品种
+2024-11-13 09:02:27,579 [INFO] 开始创建SHFE的期货品种按钮
+2024-11-13 09:02:27,611 [INFO] 获取到18期货品种
+2024-11-13 09:02:30,096 [DEBUG] Starting new HTTP connection (1): api.waditu.com:80
+2024-11-13 09:02:30,224 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal HTTP/11" 307 0
+2024-11-13 09:02:30,283 [DEBUG] http://api.waditu.com:80 "POST /dataapi/trade_cal/ HTTP/11" 200 209
+2024-11-13 09:02:30,287 [INFO] Tushare API 初始化成功
+2024-11-13 09:02:30,289 [ERROR] 创建更新线程失败: 'UpdateMainThread' object has no attribute 'cancel'
+Traceback (most recent call last):
+  File "D:\PycharmProjects\database\ui\contract_view.py", line 1050, in update_main_contracts
+    progress_dialog.cancelled.connect(self.update_main_thread.cancel)
+AttributeError: 'UpdateMainThread' object has no attribute 'cancel'
+
