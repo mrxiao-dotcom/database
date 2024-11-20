@@ -14,6 +14,7 @@ import logging
 import traceback
 from services.data_update_service import DataUpdateService
 import time
+from utils.scheduler import setup_scheduler
 
 class DataFetchThread(QThread):
     progress_updated = pyqtSignal(int, str)
@@ -144,7 +145,7 @@ class ContractView(QWidget):
             upper_layout.setSpacing(2)
             upper_layout.setContentsMargins(0, 0, 0, 0)
             
-            # 交易所标签页
+            # 交易所标签��
             self.exchange_tab = QTabWidget()
             self.exchange_tab.setMaximumHeight(120)  # 限制最大高度
             self.exchange_tab.currentChanged.connect(self.on_exchange_changed)
@@ -193,11 +194,15 @@ class ContractView(QWidget):
             self.update_main_history_btn.clicked.connect(self.update_main_contract_history)
             self.update_main_btn = QPushButton("获取最新主力合约")
             self.update_main_btn.clicked.connect(self.update_main_contracts)
+            self.auto_run_btn = QPushButton("自动运行")
+            self.auto_run_btn.setCheckable(True)  # 使按钮可切换
+            self.auto_run_btn.clicked.connect(self.toggle_auto_run)
             quote_header.addWidget(quote_label)
             quote_header.addWidget(self.update_quote_btn)
             quote_header.addWidget(self.update_basic_btn)
             quote_header.addWidget(self.update_main_history_btn)
             quote_header.addWidget(self.update_main_btn)
+            quote_header.addWidget(self.auto_run_btn)
             quote_layout.addLayout(quote_header)
             
             self.quote_table = QTableWidget()
@@ -450,7 +455,7 @@ class ContractView(QWidget):
             return
         
         try:
-            # 获取当前所���主力合约
+            # 获取当前所主力合约
             self.main_contracts = self._get_current_main_contracts()
             
             self.contract_table.setRowCount(len(df))
@@ -846,7 +851,7 @@ class ContractView(QWidget):
         try:
             # 检查数据库连接
             if not self.db or not self.db.connection:
-                QMessageBox.warning(self, "警告", "请先连接数据库")
+                QMessageBox.warning(self, "警告", "请先连接数���库")
                 return
             
             # 禁用更新按钮
@@ -879,8 +884,8 @@ class ContractView(QWidget):
                     except Exception as e:
                         self.finished.emit(False, str(e))
                         
-                    def cancel(self):
-                        self.is_cancelled = True
+                def cancel(self):
+                    self.is_cancelled = True
             
             try:
                 # 创建更新服务
@@ -922,7 +927,7 @@ class ContractView(QWidget):
             logging.error(error_msg)
             QMessageBox.warning(self, "警告", f"更新失败: {str(e)}")
             self.update_basic_btn.setEnabled(True)
-
+    
     def update_main_contracts(self):
         """更新最新主力合约信息"""
         try:
@@ -1002,3 +1007,48 @@ class ContractView(QWidget):
             logging.error(error_msg)
             QMessageBox.warning(self, "警告", f"更新失败: {str(e)}")
             self.update_main_btn.setEnabled(True)
+    
+    def toggle_auto_run(self):
+        """切换自动运行状态"""
+        try:
+            if self.auto_run_btn.isChecked():
+                # 启动自动运行
+                self.scheduler = setup_scheduler()
+                self.auto_run_btn.setText("取消自动运行")
+                
+                # 禁用其他按钮
+                self.update_quote_btn.setEnabled(False)
+                self.update_basic_btn.setEnabled(False)
+                self.update_main_history_btn.setEnabled(False)
+                self.update_main_btn.setEnabled(False)
+                
+                # 显示提示信息
+                QMessageBox.information(
+                    self,
+                    "自动运行已启动",
+                    "系统将在每天17:00自动执行以下任务：\n"
+                    "1. 更新合约信息\n"
+                    "2. 获取最新主力合约\n"
+                    "3. 更新行情数据\n"
+                    "4. 更新主力合约历史"
+                )
+                
+            else:
+                # 停止自动运行
+                if hasattr(self, 'scheduler'):
+                    self.scheduler.shutdown()
+                    delattr(self, 'scheduler')
+                self.auto_run_btn.setText("自动运行")
+                
+                # 启用其他按钮
+                self.update_quote_btn.setEnabled(True)
+                self.update_basic_btn.setEnabled(True)
+                self.update_main_history_btn.setEnabled(True)
+                self.update_main_btn.setEnabled(True)
+                
+        except Exception as e:
+            logging.error(f"切换自动运行状态失败: {str(e)}\n{traceback.format_exc()}")
+            QMessageBox.warning(self, "警告", f"操作失败: {str(e)}")
+            # 重置按钮状态
+            self.auto_run_btn.setChecked(False)
+            self.auto_run_btn.setText("自动运行")

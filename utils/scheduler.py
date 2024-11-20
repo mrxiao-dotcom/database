@@ -29,16 +29,39 @@ def _log_error(e, context=""):
     print(error_msg, file=sys.stderr)
     return error_msg
 
-def sync_all_data():
-    """每日定时更新数据的任务"""
+def daily_update():
+    """每日定时更新任务"""
     try:
-        logging.info("开始执行定时数据更新任务")
+        logging.info("\n开始执行每日定时更新任务")
         service = DataUpdateService()
-        service.update_all_data()
-        logging.info("定时数据更新任务完成")
+        
+        # 1. 更新合约信息
+        logging.info("1. 更新合约信息")
+        if service.update_basic_info():
+            logging.info("合约信息更新成功")
+        else:
+            logging.error("合约信息更新失败")
+        
+        # 2. 获取最新主力合约
+        logging.info("2. 获取最新主力合约")
+        success_count, fail_count = service.db.update_main_contracts()
+        logging.info(f"主力合约更新完成: 成功{success_count}, 失败{fail_count}")
+        
+        # 3. 更新行情数据
+        logging.info("3. 更新行情数据")
+        success, skip, fail = service.update_all_quotes()
+        logging.info(f"行情数据更新完成: 成功{success}, 跳过{skip}, 失败{fail}")
+        
+        # 4. 更新主力合约历史
+        logging.info("4. 更新主力合约历史")
+        success, skip, fail = service.update_main_contract_history()
+        logging.info(f"主力合约历史更新完成: 成功{success}, 跳过{skip}, 失败{fail}")
+        
+        logging.info("每日定时更新任务完成")
+        
     except Exception as e:
-        error_msg = _log_error(e, "定时数据更新任务")
-        # TODO: 在这里添加邮件通知逻辑
+        error_msg = _log_error(e, "每日定时更新任务")
+        # TODO: 添加邮件通知逻辑
         raise
 
 def setup_scheduler():
@@ -46,9 +69,10 @@ def setup_scheduler():
     try:
         scheduler = BackgroundScheduler()
         # 每天17:00执行数据同步
-        scheduler.add_job(sync_all_data, 'cron', hour=17)
+        scheduler.add_job(daily_update, 'cron', hour=17)
         scheduler.start()
         logging.info("定时任务调度器启动成功")
+        return scheduler
     except Exception as e:
         error_msg = _log_error(e, "定时任务调度器启动")
         raise
